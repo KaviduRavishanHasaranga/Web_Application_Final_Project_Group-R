@@ -76,7 +76,7 @@
             </div>
         </div>
 
-
+        <dev class="all">
         <section class="start">
             <h1>Jem Colection</h1><br>
             <div class="start-container">
@@ -147,7 +147,8 @@
                 </div>
                 </a>
             </div>
-        </section>      
+        </section>  
+        </dev>    
 
         </div>
     </div>
