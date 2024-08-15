@@ -23,6 +23,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
         rel="stylesheet">
+
+        <link rel="stylesheet" href="css\shop.css">
 </head>
 
 <body>
@@ -55,6 +57,89 @@
         </nav>
     </header>
     <!--===Header Section Close===-->
+
+    <!---===item main container===-->
+    <div class="one">
+    <div class="one-container">
+        <div class="filterSecion">
+            <div class="filtercontainer">
+            <h1>Filter by Category</h1>
+            <div id="category">Price</div>
+            <div id="category">Gem Type</div> 
+            <div id="category">Colour</div>
+            <div id="category">Shape</div>
+            <div id="category">Carat Weight</div>
+            
+            <p>your personality and prioty improve by jems </p>
+            <br>
+            <button>Sign</button>
+            </div>
+        </div>
+
+
+        <section class="start">
+            <h1>Jem Colection</h1><br>
+            <div class="start-container">
+                
+                <div class="start-colum">
+                   
+                    <img src="Images/BLUE SAPPHIRE-1.jpg" alt="this is jem picture" class="one-image-f">
+                     
+                    <button id="jembutton"><h1>BLUE SAPPHIRE</h1></button>
+                    <P>Precious Gemstones</P>
+                     <p>RS 150000</p>
+                </div>
+       
+                <div class="start-colum">
+                    <img src="Images/ruby-2.jpg" alt="this is jem picture" class="one-image-f">
+                   <p>Precious Gemstones</p>
+                    <button id="jembutton"><h1>RUBY</h1></button>
+                </div>
+
+                
+       
+                <div class="start-colum">
+                    <img src="Images/Pink Sapphire.jpg" alt="this is jem picture" class="one-image-f">
+                    <p>Precious Gemstones</p>
+                    <button id="jembutton"><h1>PINK SAPPHIRE</h1></button>
+                </div>
+
+                <div class="start-colum">
+                    <img src="Images/WHITE SAPPHIRE.jpg" alt="this is jem picture" class="one-image-f">
+                    <p>Precious Gemstones</p>
+                    <button id="jembutton"><h1>WHITE SAPPHIRE</h1></button>
+                </div>
+       
+                <div class="start-colum">
+                    <img src="Images/PADPARADSCHA.jpg" alt="this is jem picture" class="one-image-f">
+                    <p>Precious Gemstones</p>
+                    <button id="jembutton"><h1>PADPARADSCHA</h1></button>
+                </div>
+                
+                <div class="start-colum">
+                    <img src="Images/STAR SAPPHIRE-1.jpg" alt="this is jem picture" class="one-image-f">
+                    <p>Precious Gemstones</p>
+                    <button id="jembutton"><h1>STAR SAPPHIRE</h1></button>
+                </div>
+       
+                <div class="start-colum">
+                    <img src="Images/Purple Sapphire-1.jpg" alt="this is jem picture" class="one-image-f">
+                    <p>Precious Gemstones</p>
+                    <button id="jembutton"><h1>PURPLE SAPPHIRE</h1></button>
+                </div>
+                <div class="start-colum">
+                    <img src="Images/YELLOW SAPPHIRE.jpg" alt="this is jem picture" class="one-image-f">
+                    <p>Precious Gemstones</p>
+                   <button id="jembutton"> <h1>YELLOW SAPPHIRE</h1></button>
+                </div>
+            </div>
+        </section>      
+
+        </div>
+    </div>
+</div>
+
+  
 
 
 
