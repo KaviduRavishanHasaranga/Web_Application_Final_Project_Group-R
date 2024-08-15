@@ -81,57 +81,71 @@
             <h1>Jem Colection</h1><br>
             <div class="start-container">
                 
+                <a href="shopdata.php" id="BLUE_SAPPHIRE">
                 <div class="start-colum">
-                   
-                    <img src="Images/BLUE SAPPHIRE-1.jpg" alt="this is jem picture" class="one-image-f">
-                     
+                    <img src="Images/BLUE SAPPHIRE-1.jpg" alt="this is jem picture" class="one-image-f"> 
                     <button id="jembutton"><h1>BLUE SAPPHIRE</h1></button>
                     <P>Precious Gemstones</P>
                      <p>RS 150000</p>
+                </a>
                 </div>
        
+                <a href="shopdata.php" id="RUBY">
                 <div class="start-colum">
                     <img src="Images/ruby-2.jpg" alt="this is jem picture" class="one-image-f">
                    <p>Precious Gemstones</p>
                     <button id="jembutton"><h1>RUBY</h1></button>
+                </a>
                 </div>
 
                 
-       
+                <a href="shopdata.php" id="PINK_SAPPHIRE">
                 <div class="start-colum">
                     <img src="Images/Pink Sapphire.jpg" alt="this is jem picture" class="one-image-f">
                     <p>Precious Gemstones</p>
                     <button id="jembutton"><h1>PINK SAPPHIRE</h1></button>
+                </a>
                 </div>
 
+                <a href="shopdata.php" id="WHITE_SAPPHIRE">
                 <div class="start-colum">
                     <img src="Images/WHITE SAPPHIRE.jpg" alt="this is jem picture" class="one-image-f">
                     <p>Precious Gemstones</p>
                     <button id="jembutton"><h1>WHITE SAPPHIRE</h1></button>
+                </a>
                 </div>
-       
+                
+                <a href="shopdata.php" id="PADPARADSCHA">
                 <div class="start-colum">
                     <img src="Images/PADPARADSCHA.jpg" alt="this is jem picture" class="one-image-f">
                     <p>Precious Gemstones</p>
                     <button id="jembutton"><h1>PADPARADSCHA</h1></button>
+                </a>
                 </div>
                 
+                <a href="shopdata.php" id="STAR_SAPPHIRE">
                 <div class="start-colum">
                     <img src="Images/STAR SAPPHIRE-1.jpg" alt="this is jem picture" class="one-image-f">
                     <p>Precious Gemstones</p>
                     <button id="jembutton"><h1>STAR SAPPHIRE</h1></button>
+                </a>
                 </div>
-       
+
+                <a href="shopdata.php" id="PURPLE_SAPPHIRE">
                 <div class="start-colum">
                     <img src="Images/Purple Sapphire-1.jpg" alt="this is jem picture" class="one-image-f">
                     <p>Precious Gemstones</p>
                     <button id="jembutton"><h1>PURPLE SAPPHIRE</h1></button>
+                    </a>
                 </div>
+
+                <a href="shopdata.php" id="YELLOW_SAPPHIRE">
                 <div class="start-colum">
                     <img src="Images/YELLOW SAPPHIRE.jpg" alt="this is jem picture" class="one-image-f">
                     <p>Precious Gemstones</p>
                    <button id="jembutton"> <h1>YELLOW SAPPHIRE</h1></button>
                 </div>
+                </a>
             </div>
         </section>      
 
