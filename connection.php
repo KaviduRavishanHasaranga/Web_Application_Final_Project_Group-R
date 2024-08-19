@@ -2,11 +2,11 @@
 $host="localhost";
 $user="root";
 $password="";
-$db="contact";
+$db="gemstore_db";
 
-$con = mysqli_connect($host,$user,$password,$db);
-if($con){
-    echo "Connected";
+$conn = new mysqli($host, $user, $pass, $db);
+if($conn){
+    //echo "Connected";
 }
 else{
     echo "Not Connected";
