@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 19, 2024 at 07:30 AM
+-- Generation Time: Aug 19, 2024 at 07:37 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -55,13 +55,6 @@ CREATE TABLE `contactus` (
   `message` text NOT NULL,
   `submission_date` timestamp NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Dumping data for table `contactus`
---
-
-INSERT INTO `contactus` (`id`, `title`, `full_name`, `email`, `country`, `city`, `phone`, `whatsapp`, `viber`, `telegram`, `subject`, `budget`, `message`, `submission_date`) VALUES
-(1, 'Mr.', 'Hacahhaha', 'sdgfdghdsfgdsfs@gmail.com', 'San Marino', 'sdfgfgsdf', 'sdfgsdfgsdfgsrew34', 1, 1, 0, 'sdfgsdfgsdfgsdf', 'sdfgsdfgsdfgs', 'sdfg', '2024-08-19 05:20:54');
 
 -- --------------------------------------------------------
 
@@ -145,7 +138,7 @@ ALTER TABLE `categories`
 -- AUTO_INCREMENT for table `contactus`
 --
 ALTER TABLE `contactus`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `customers`
