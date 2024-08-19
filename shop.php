@@ -64,16 +64,214 @@
         <div class="filterSecion">
             <div class="filtercontainer">
             <h1>Filter by Category</h1>
-            <div id="category">Price</div>
-            <div id="category">Gem Type</div> 
-            <div id="category">Colour</div>
-            <div id="category">Shape</div>
-            <div id="category">Carat Weight</div>
             
-            <p>your personality and prioty improve by jems </p>
-            <br>
-            <button>Sign</button>
+            <!--Carat Weight control-->
+            <div class="price-filter">
+            Carat Weight
+                <input type="range" min="0" max="1840" value="920" id="priceRange">
+                 <p>Carat 0 - <span id="priceValue">1840</span></p>
             </div>
+
+                <div class="price">
+                </div><br>
+                <div class="filtercontainer">
+    
+
+    
+    <div class="dropdown">
+        <button class="dropdown-toggle">Gem Type</button>
+        <div class="dropdown-content">
+            <label class="dropdown-item">
+                <input type="radio" name="gemType" value="Alexandrite"> Alexandrite
+            </label>
+            <label class="dropdown-item">
+                <input type="radio" name="gemType" value="Amethyst"> Amethyst
+            </label>
+            <label class="dropdown-item">
+                <input type="radio" name="gemType" value="Apatite"> Apatite
+            </label>
+            <label class="dropdown-item">
+                <input type="radio" name="gemType" value="Aquamarine"> Aquamarine
+            </label>
+            <label class="dropdown-item">
+                <input type="radio" name="gemType" value="Blue Sapphire"> Blue Sapphire
+            </label>
+        </div>
+    </div>
+</div>
+
+
+<div class="dropdown">
+        <button class="dropdown-toggle">Colour Type</button>
+        <div class="dropdown-content">
+            <label class="dropdown-item">
+                <input type="radio" name="colourType" value="Alexandrite Cat's Eye"> Alexandrite Cat's Eye
+            </label>
+            <label class="dropdown-item">
+                <input type="radio" name="colourType" value="Blue"> Blue
+            </label>
+            <label class="dropdown-item">
+                <input type="radio" name="colourType" value="Blue Green Changing to Red"> Blue Green Changing to Red
+            </label>
+            <label class="dropdown-item">
+                <input type="radio" name="colourType" value="Blueish to Purplish"> Blueish to Purplish
+            </label>
+            <label class="dropdown-item">
+                <input type="radio" name="colourType" value="Corm Flower"> Corm Flower
+            </label>
+            <label class="dropdown-item">
+                <input type="radio" name="colourType" value="Corn Flower Blue"> Corn Flower Blue
+            </label>
+            <label class="dropdown-item">
+                <input type="radio" name="colourType" value="Cornflower"> Cornflower 
+            </label>
+            <label class="dropdown-item">
+                <input type="radio" name="colourType" value="Cornflower blue"> Cornflower blue
+            </label>
+            <label class="dropdown-item">
+                <input type="radio" name="colourType" value="Cornflower Blue"> Cornflower Blue
+            </label>
+            <label class="dropdown-item">
+                <input type="radio" name="colourType" value="Dark Pink"> Dark Pink
+            </label>
+            <label class="dropdown-item">
+                <input type="radio" name="colourType" value="Deep Yellow"> Deep Yellow
+
+            </label>
+            <label class="dropdown-item">
+                <input type="radio" name="colourType" value="Fancy"> Fancy
+
+            </label>
+            <label class="dropdown-item">
+                <input type="radio" name="colourType" value="Forest Green"> Forest Green
+            </label>
+            <label class="dropdown-item">
+                <input type="radio" name="colourType" value="Green"> Green
+
+            </label>
+            <label class="dropdown-item">
+                <input type="radio" name="colourType" value="Green Blue"> Green Blue
+
+            </label>
+            <label class="dropdown-item">
+                <input type="radio" name="colourType" value="Greenish Yellow"> Greenish Yellow
+            </label>
+            <label class="dropdown-item">
+                <input type="radio" name="colourType" value="Honey"> Honey
+            </label>
+            <label class="dropdown-item">
+                <input type="radio" name="colourType" value="Honey Cat's Eye"> Honey Cat's Eye
+            </label>
+            <label class="dropdown-item">
+                <input type="radio" name="colourType" value="Kashmir Blue"> Kashmir Blue
+            </label>
+            <label class="dropdown-item">
+                <input type="radio" name="colourType" value="Light Blue"> Light Blue
+
+            </label>
+            <label class="dropdown-item">
+                <input type="radio" name="colourType" value="Light Green"> Light Green
+            </label>
+            <label class="dropdown-item">
+                <input type="radio" name="colourType" value="Medium Blue"> Medium Blue
+            </label>
+            <label class="dropdown-item">
+                <input type="radio" name="colourType" value="Medium Yellow"> Medium Yellow
+            </label>
+            <label class="dropdown-item">
+                <input type="radio" name="colourType" value="Mix"> Mix
+            </label>
+            <label class="dropdown-item">
+                <input type="radio" name="colourType" value="Multi Colour"> Multi Colour
+            </label>
+            
+        </div>
+    </div>
+</div>
+
+<div class="dropdown">
+        <button class="dropdown-toggle">Shape</button>
+        <div class="dropdown-content">
+            <label class="dropdown-item">
+                <input type="radio" name="shape" value="Baguette"> Baguette
+            </label>
+            <label class="dropdown-item">
+                <input type="radio" name="shape" value="Briolette"> Briolette
+
+            </label>
+            <label class="dropdown-item">
+                <input type="radio" name="shape" value="Cabochon"> Cabochon
+            </label>
+            <label class="dropdown-item">
+                <input type="radio" name="shape" value="cushion"> cushion
+            </label>
+            <label class="dropdown-item">
+                <input type="radio" name="shape" value="Heart"> Heart
+            </label>
+            <label class="dropdown-item">
+                <input type="radio" name="shape" value="Marquise"> Marquise
+            </label>
+            <label class="dropdown-item">
+                <input type="radio" name="shape" value="Mix"> Mix
+            </label>
+            <label class="dropdown-item">
+                <input type="radio" name="shape" value="Octagon"> Octagon
+            </label>
+            <label class="dropdown-item">
+                <input type="radio" name="shape" value="Oval"> Oval
+            </label>
+            <label class="dropdown-item">
+                <input type="radio" name="shape" value="Oval/Pear"> Oval/Pear
+            </label>
+            <label class="dropdown-item">
+                <input type="radio" name="shape" value="Pear"> Pear
+            </label>
+            <label class="dropdown-item">
+                <input type="radio" name="shape" value="pear"> pear
+            </label>
+            <label class="dropdown-item">
+                <input type="radio" name="shape" value="Radiant"> Radiant
+            </label>
+            <label class="dropdown-item">
+                <input type="radio" name="shape" value="Rectangle"> Rectangle
+            </label>
+            <label class="dropdown-item">
+                <input type="radio" name="shape" value="Rectangle cushion"> Rectangle cushion
+            </label>
+            <label class="dropdown-item">
+                <input type="radio" name="shape" value="Rectangular Cushion"> Rectangular Cushion
+            </label>
+            <label class="dropdown-item">
+                <input type="radio" name="shape" value="Round"> Round
+            </label>
+            <label class="dropdown-item">
+                <input type="radio" name="shape" value="Square"> Square
+            </label>
+            <label class="dropdown-item">
+                <input type="radio" name="shape" value="Square Cushion"> Square Cushion
+            </label>
+            <label class="dropdown-item">
+                <input type="radio" name="shape" value="Tapered Baguette"> Tapered Baguette
+            </label>
+            <label class="dropdown-item">
+                <input type="radio" name="shape" value="Trigonal"> Trigonal
+            </label>
+
+        </div>
+    </div>
+     <!--price control-->
+     <div class="price-filter">
+            Price
+                <input type="range" min="0" max="5000" value="2500" id="priceRange">
+                 <p>$0 - <span id="priceValue">2500</span></p>
+            </div>
+</div>
+
+        
+           
+           
+            
+           
         </div>
 
         <dev class="all">
@@ -81,68 +279,83 @@
             <h1>Jem Colection</h1><br>
             <div class="start-container">
                 
-                <a href="shopdata.php" id="BLUE_SAPPHIRE">
-                <div class="start-colum">
+               
+                <div class="start-colum"> 
+                    <a href="shopdata.php" id="BLUE_SAPPHIRE">
                     <img src="Images/BLUE SAPPHIRE-1.jpg" alt="this is jem picture" class="one-image-f"> 
-                    <button id="jembutton"><h1>BLUE SAPPHIRE</h1></button>
                     <P>Precious Gemstones</P>
-                     <p>RS 150000</p>
+                    <p>RS 150000</p>
+                    <button id="jembutton"><h1>BLUE SAPPHIRE</h1></button>
+                   
                 </a>
                 </div>
        
-                <a href="shopdata.php" id="RUBY">
+               
                 <div class="start-colum">
+                <a href="shopdata.php" id="RUBY">
                     <img src="Images/ruby-2.jpg" alt="this is jem picture" class="one-image-f">
                    <p>Precious Gemstones</p>
+                   <p>Rs 225000</p>
                     <button id="jembutton"><h1>RUBY</h1></button>
                 </a>
                 </div>
 
                 
-                <a href="shopdata.php" id="PINK_SAPPHIRE">
                 <div class="start-colum">
+                    <a href="shopdata.php" id="PINK_SAPPHIRE">
                     <img src="Images/Pink Sapphire.jpg" alt="this is jem picture" class="one-image-f">
                     <p>Precious Gemstones</p>
+                    <p>Rs 175000</P>
                     <button id="jembutton"><h1>PINK SAPPHIRE</h1></button>
                 </a>
                 </div>
 
-                <a href="shopdata.php" id="WHITE_SAPPHIRE">
+                
                 <div class="start-colum">
+                    <a href="shopdata.php" id="WHITE_SAPPHIRE">
                     <img src="Images/WHITE SAPPHIRE.jpg" alt="this is jem picture" class="one-image-f">
                     <p>Precious Gemstones</p>
+                    <p>Rs 135623</p>
                     <button id="jembutton"><h1>WHITE SAPPHIRE</h1></button>
                 </a>
                 </div>
                 
-                <a href="shopdata.php" id="PADPARADSCHA">
+                
                 <div class="start-colum">
+                    <a href="shopdata.php" id="PADPARADSCHA">
                     <img src="Images/PADPARADSCHA.jpg" alt="this is jem picture" class="one-image-f">
                     <p>Precious Gemstones</p>
+                    <p>Rs 145000</p>
                     <button id="jembutton"><h1>PADPARADSCHA</h1></button>
                 </a>
                 </div>
                 
-                <a href="shopdata.php" id="STAR_SAPPHIRE">
+                
                 <div class="start-colum">
+                    <a href="shopdata.php" id="STAR_SAPPHIRE">
                     <img src="Images/STAR SAPPHIRE-1.jpg" alt="this is jem picture" class="one-image-f">
                     <p>Precious Gemstones</p>
+                    <p>Rs 135850</p>
                     <button id="jembutton"><h1>STAR SAPPHIRE</h1></button>
                 </a>
                 </div>
 
-                <a href="shopdata.php" id="PURPLE_SAPPHIRE">
+                
                 <div class="start-colum">
+                    <a href="shopdata.php" id="PURPLE_SAPPHIRE">
                     <img src="Images/Purple Sapphire-1.jpg" alt="this is jem picture" class="one-image-f">
                     <p>Precious Gemstones</p>
+                    <p>Rs 11010</p>
                     <button id="jembutton"><h1>PURPLE SAPPHIRE</h1></button>
                     </a>
                 </div>
 
-                <a href="shopdata.php" id="YELLOW_SAPPHIRE">
+                
                 <div class="start-colum">
+                    <a href="shopdata.php" id="YELLOW_SAPPHIRE">
                     <img src="Images/YELLOW SAPPHIRE.jpg" alt="this is jem picture" class="one-image-f">
                     <p>Precious Gemstones</p>
+                    <p>Rs 125623</p>
                    <button id="jembutton"> <h1>YELLOW SAPPHIRE</h1></button>
                 </div>
                 </a>
