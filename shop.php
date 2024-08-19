@@ -263,7 +263,7 @@
      <div class="price-filter">
             Price
                 <input type="range" min="0" max="5000" value="2500" id="priceRange">
-                 <p>$0 - <span id="priceValue">2500</span></p>
+                 <p>Rs:0 - <span id="priceValue">2500</span></p>
             </div>
 </div>
 
@@ -313,7 +313,7 @@
                 
                 <div class="start-colum">
                     <a href="shopdata.php" id="WHITE_SAPPHIRE">
-                    <img src="Images/WHITE SAPPHIRE.jpg" alt="this is jem picture" class="one-image-f">
+                    <img src="Images/whitesapphire.jpeg" alt="this is jem picture" class="one-image-f">
                     <p>Precious Gemstones</p>
                     <p>Rs 135623</p>
                     <button id="jembutton"><h1>WHITE SAPPHIRE</h1></button>
