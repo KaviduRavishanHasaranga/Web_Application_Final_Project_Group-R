@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+main {
+    padding: 20px;
+}
+
+.blog-form, .blog-posts {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.blog-posts{
+    margin-top: 120px;
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+form button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #218838;
+}
+
+.blog-post {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+.blog-post h3 {
+    margin: 0;
+}
+
+.blog-post p {
+    margin: 10px 0 0;
+}
+
+.para_event{
+    padding: 10px 10px 0px 0px;
+    text-align: justify;
+    
+}
+
+.seeMoreBtn{
+    background-color: #837efb;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 5px 0px 20px 0px;
+}
+
+.seeMoreBtn:hover{
+    background-color: #8e59ff;
+}
+
+#postsContainer{
+    padding-left: 10px;
+}
+
+h3{
+    margin-top: 10px;
+}
