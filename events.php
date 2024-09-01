@@ -47,7 +47,7 @@
             <br>
             <span>Posted in <a href="#">Blue sapphire</a>, <a href="#">Events</a>, <a href="#">Gem Exhibition</a>, <a href="#">gemstone</a>, <a href="#">sustainability</a></span>
             <br><br>
-            <a href="#"><button class="read-more">Read More</button></a>
+            <a href="#"><button class="read-more" height="100px">Read More</button></a>
         </div>
     </div>
 
