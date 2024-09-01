@@ -19,19 +19,28 @@
             </div>
             <div class="shop-items">
                 <?php for ($i=0;$i<8;$i++) { ?>
-                        <div class="item-card">
-                            <img src="Images\shop_items\ruby-3.jpg" alt="Blue Sapphire">
-                            <h3>Blue Sapphire</h3>
-                            <p>$500</p>
-                            <a href="#" class="add-to-cart">Add to Cart</a>
+                    <div class="item-card">
+                        <div class="slider">
+                            <div class="slides">
+                                <div class="slide"><img src="Images/shop_items/ruby-1.jpg" alt="Blue Sapphire"></div>
+                                <div class="slide"><img src="Images/shop_items/ruby-2.jpg" alt="Blue Sapphire"></div>
+                                <div class="slide"><img src="Images/shop_items/ruby-3.jpg" alt="Blue Sapphire"></div>
+                            </div>
+                            <div class="slider-nav">
+                                <span class="prev">&#10094;</span>
+                                <span class="next">&#10095;</span>
+                            </div>
                         </div>
+                        <h3>Blue Sapphire</h3>
+                        <p>$500</p>
+                        <a href="cart.php" class="add-to-cart">Add To Cart</a>
+                        <a href="buy-now.php" class="buy-now">Buy Now</a>
+                    </div>
                 <?php } ?>
-
-                <!-- Repeat similar item cards for other gemstones -->
             </div>
+
         </div>
     </section>
     <!--===Shop Section End===-->
-
 
 <?php include 'assets/footer.php'; ?>
