@@ -53,11 +53,17 @@
         <!--image box-->
 
             <div class="images">
-                <img class="main_image" src="Images/BLUE SAPPHIRE.png">
+                <img class="main_image" src="Images/bs1.webp" id="mainImg">
                 <div class="child_image">
-                    <img src="Images/BLUE SAPPHIRE.png" >
-                    <img src="Images/BLUE SAPPHIRE.png" >
-                    <img src="Images/BLUE SAPPHIRE.png" >
+                    <div class="child_image_col">
+                        <img src="Images/bs1.webp" class="childImg">
+                    </div>
+                    <div class="child_image_col">
+                        <img src="Images/bs2.png" class="childImg">
+                    </div>
+                    <div class="child_image_col">
+                        <img src="Images/bs3.webp" class="childImg">
+                    </div>
                 </div>
             </div>  
             
@@ -91,6 +97,18 @@
                 </div> 
             </div>       
         </div>
+
+        <script>
+
+            var mainImg = document.getElementById("mainImg");
+            var childImg = document.getElementsByClassName("childImg");
+
+            for(let i=0;i<3;i++){
+                childImg[i].onclick=function(){
+                    mainImg.src=childImg[i].src;
+                }
+            }
+        </script>
     
 </body>
 </html>
