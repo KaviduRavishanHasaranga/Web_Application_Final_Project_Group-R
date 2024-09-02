@@ -1,0 +1,211 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Open Sans", sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+:root {
+  --main-color: #d6bccf;
+  --black: #dddddd;
+  --bg: #ffffff;
+  --border: 0.2rem solid rgba(0, 0, 0, 0.25);
+}
+
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Shop Container Styles */
+.shop-container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  height: 300px;
+}
+
+.gem-title {
+  text-align: center;
+}
+
+.gem-title h1 {
+  font-size: 2.5rem;
+  color: #333333;
+}
+
+.gem-title p {
+  font-size: 1.2rem;
+  color: #333333;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+  font-weight:600;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .gem-title h1 {
+    font-size: 2rem;
+  }
+
+  .gem-title p {
+    font-size: 0.9rem;
+  }
+}
+
+/* Container for all cards */
+.main-container {
+  margin: 140px 100px 0;
+
+}
+.second-title{
+  padding: 100px;
+  background-color: aquamarine;
+}
+.sub-container {
+  justify-content: center;
+  display: flex;
+  margin: 10px;
+  padding: 20px;
+}
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+}
+
+/* Filter Sidebar */
+.filter-sidebar {
+  width: 25%;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-right: 20px;
+}
+
+.filter-section {
+  margin-bottom: 20px;
+}
+
+.filter-section h3 {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.filter-section ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.filter-section ul li {
+  margin-bottom: 8px;
+}
+
+.filter-section input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+.range-values {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Individual Card Styling */
+.card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%; /* Default to 100% width */
+  max-width: 300px; /* Constrain the card to a max width */
+  text-align: center;
+  padding: 15px;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px 8px 0 0;
+}
+
+.card h3 {
+  margin: 15px 0;
+  font-size: 14px;
+  color: #333;
+}
+
+.card p {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.price {
+  margin: 10px 0;
+}
+
+/* .old-price {
+  text-decoration: line-through;
+  color: #999;
+  margin-right: 10px;
+} */
+
+.new-price {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.add-to-cart {
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  padding: 10px 15px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 100%;
+}
+
+.add-to-cart:hover {
+  background-color: rgb(210, 210, 210);
+  color: black;
+  border: 1px solid black;
+}
+
+/* Responsive Design: 3 cards per row on medium screens */
+@media (min-width: 768px) {
+  .card {
+    flex: 1 1 calc(33.333% - 20px); /* 3 cards per row with space between */
+  }
+}
+
+/* Responsive Design: 2 cards per row on smaller screens */
+@media (min-width: 640px) and (max-width: 1185px) {
+  .card {
+    flex: 1 1 calc(50% - 20px); /* 2 cards per row with space between */
+  }
+}
+
+/* Responsive Design: 1 card per row on very small screens */
+@media (max-width: 575px) {
+  .card {
+    flex: 1 1 100%; /* 1 card per row */
+  }
+}

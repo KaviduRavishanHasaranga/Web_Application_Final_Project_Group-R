@@ -4,7 +4,7 @@ document.getElementById("contactForm").addEventListener("submit", function(event
     var phone = document.getElementById("phone").value;
 
     // Basic validation checks
-    if (fullName.length < 3 || fullName.length > 50) {
+    if (fullName.length < 3 || fullName.length > 10) {
         alert("Full Name must be between 3 and 50 characters.");
         event.preventDefault();
     }

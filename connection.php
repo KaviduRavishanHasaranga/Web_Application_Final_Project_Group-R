@@ -1,7 +1,7 @@
 <?php
 $host="localhost";
 $user="root";
-$password="";
+$pass="";
 $db="gemstore_db";
 
 $conn = new mysqli($host, $user, $pass, $db);

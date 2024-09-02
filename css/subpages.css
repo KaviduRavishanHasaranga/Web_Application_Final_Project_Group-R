@@ -12,14 +12,20 @@ body {
 }
 
 /*Common CSS S*/
+.abocontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .abodetails {
+  width: 100%;
   margin: 150px 100px 0;
   padding: 10px;
   align-items: center;
 }
 .abodetails h2 {
   font-size: 50px;
-  font-weight: 600;
+  font-weight: bolder;
   text-align: center;
   text-transform: uppercase;
 }
@@ -30,16 +36,17 @@ body {
   text-align: center;
 }
 .abodetails p {
-  font-size: 18px;
+  font-size: 1.2rem;
   text-align: center;
-  line-height: 1.5;
+  line-height: 2rem;
 }
 /* About Us Page CSS*/
-.aboimg{
-  align-items: center;
+.aboimg {
+  text-align: center;
 }
 .aboimg img {
   width: 300px;
+  height: 300px;
   border: 1px solid;
 }
 
@@ -55,6 +62,9 @@ body {
 }
 .form-container {
   align-content: center;
+  border: 1px solid #ccc;
+  margin-top: 50px;
+  padding: 30px;
 }
 .user-details {
   justify-content: center;
@@ -80,7 +90,7 @@ body {
 .box-3 {
   flex-grow: 1;
 }
-.box-4{
+.box-4 {
   width: 630px;
 }
 
@@ -201,7 +211,7 @@ form .user-details .input-box {
 }
 
 .event-post .event-img img {
-  width: 60%;
+  width: 400px;
   height: auto;
 }
 .img3 {
@@ -244,11 +254,7 @@ form .user-details .input-box {
   background-color: #6a6a6a;
   opacity: 50%;
 }
-.sec1,
-.sec2,
-.sec3,
-.sec4 {
-}
+
 .info-container .information .inf-img {
   text-align: center;
 }

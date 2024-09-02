@@ -1,5 +1,6 @@
 <?php include 'assets/header.php'; ?>
 
+<div class="abocontainer">
     <div class="abodetails">
         <h2>About Gems in Sri Lanka</h2>
         <h3>With more than 30 years of experience in Gem business, we being most trustworthy genuine Gemstones Dealers,
@@ -19,10 +20,10 @@
             <br><br>
         </p>
         <div class="aboimg">
-            <img src="Images\PINK SAPPHIRE.jpg">
-            <img src="Images\PINK SAPPHIRE.jpg">
-            <img src="Images\PINK SAPPHIRE.jpg">
-            <img src="Images\PINK SAPPHIRE.jpg">
+            <img src="Images\aboutimg1.jpg">
+            <img src="Images\aboutimg2.jpg">
+            <img src="Images\aboutimg3.jpg">
+            <img src="Images\aboutimg4.jpg">
         </div>
         <br><br>
         <p>
@@ -45,5 +46,6 @@
             <br><br>
         </p>
     </div>
-    
+</div>
+
 <?php include 'assets/footer.php'; ?>
