@@ -282,10 +282,6 @@ main {
   margin-bottom: 20px;
 }
 
-.blog-posts{
-  margin-top: 120px;
-}
-
 form label {
   display: block;
   margin: 10px 0 5px;
@@ -329,20 +325,6 @@ form button:hover {
   padding: 10px 10px 0px 0px;
   text-align: justify;
   
-}
-
-.seeMoreBtn{
-  background-color: #837efb;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 4px;
-  cursor: pointer;
-  margin: 5px 0px 20px 0px;
-}
-
-.seeMoreBtn:hover{
-  background-color: #8e59ff;
 }
 
 #postsContainer{

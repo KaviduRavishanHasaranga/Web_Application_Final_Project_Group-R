@@ -4,9 +4,9 @@ $user="root";
 $password="";
 $db="gemstore_db";
 
-$conn = new mysqli($host, $user, $pass, $db);
+$conn = new mysqli($host, $user, $password, $db);
 if($conn){
-    //echo "Connected";
+    // echo "Connected";
 }
 else{
     echo "Not Connected";
