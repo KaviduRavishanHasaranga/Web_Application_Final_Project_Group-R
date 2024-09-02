@@ -7,7 +7,7 @@
         </div>
 
         <div class="event-post post1">
-            <h3>Facets 2023: A Global Invitation to the Most Fabulous Gem Show in Sri Lanka</h3>
+            <h3 name="eventName">Facets 2023: A Global Invitation to the Most Fabulous Gem Show in Sri Lanka</h3>
             <h4>by Kavidu Hasaranga &nbsp; June 28,2024</h4>
             <br>
             <div class="event-img img1">

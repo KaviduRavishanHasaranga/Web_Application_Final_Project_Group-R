@@ -22,11 +22,10 @@ if (isset($_POST['submit'])) {
 
     if ($conn->query($insertQuery) == TRUE) {
         header("Location: sucess.php");
-        exit();
+ 
+    }       exit();
     } else {
         echo "Error" . $conn->error;
-    }
-    
     //cose the connetion
     $conn->close();
 }
