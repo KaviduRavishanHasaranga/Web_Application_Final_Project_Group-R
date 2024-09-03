@@ -1,0 +1,256 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Spartan", sans-serif;
+    list-style: none;
+    text-decoration: none;
+  }
+  body {
+    margin: 0px;
+  }
+
+  /*  navi bar  */
+
+  .navbar {
+    background-color: rgb(240, 240, 238);
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10%;
+  }
+  .logo img {
+    width: 150px;
+    height: auto;
+  }
+  .navmenu {
+    display: flex;
+  }
+  .navmenu a {
+    color: black;
+    font-size: 18px;
+    padding: 10px 15px;
+    font-weight: 4500;
+    transition: all 0.42s ease;
+  }
+  .navmenu a:hover {
+    color: rgb(18, 136, 227);
+  }
+  .nav-icon {
+    display: flex;
+    align-items: center;
+  }
+  .nav-icon i {
+    margin-right: 20px;
+    align-items: center;
+    color: black;
+    font-size: 25px;
+    font-weight: 400;
+    transition: all 0.42s ease;
+  }
+  .nav-icon i:hover {
+    transform: scale(1.3);
+    color: rgb(18, 136, 227);
+  }
+
+/* -----my css------ */
+
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 120px;
+    padding: 20px;
+    gap: 20px;
+    background-color: #ffffff;  
+}
+
+.images{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+}
+
+.main_image {
+    padding-left: 20px;
+    width: 85%;
+    height: auto;
+    margin-top: -10%;
+}
+
+.child_image{
+    display: grid;
+    padding-right: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 7px;
+    padding-top: 5px;
+}
+
+.child_image img {
+    width: 80%;
+    border: 2px solid rgba(255, 255, 255, 0);
+    height: auto;
+}
+.child_image img:hover{
+    border:2px solid #3f3f3f;
+    cursor: pointer;
+
+}
+
+
+.product_details {
+    display: grid;
+    grid-template-rows: repeat(6, auto);
+    gap: 15px;
+}
+
+.product_details h1 {
+    font-size: 24px;
+}
+
+.price {
+    color: #333;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.stock_info {
+    font-size: 16px;
+    color: #666;
+}
+
+.quantity {
+    margin-bottom: 20px;
+}
+.quantity_box{
+    width: 10%;
+    height: 2rem;
+    padding-left: 10px;
+    
+}
+
+.add_to_cart {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+.add_to_cart button {
+    padding: 15px;
+    background-color: #6200ea;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.add_to_cart button:hover {
+    background-color: #2e0886;
+}
+
+.add_to_cart button:active{
+    background-color: #9b9b9b;
+    color: #2e0886;
+}
+
+
+.pickup{
+    color: #388e3c;
+    font-size: 14px;
+}
+
+.gem_info {
+    display: grid;
+    font-size: 16px;
+    color: #333;
+    gap: 15px;   
+    
+}
+
+/* Media Queries */
+
+/* Tablets (landscape) */
+@media screen and (max-width: 1024px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    .add_to_cart {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Tablets (portrait) and large phones */
+@media screen and (max-width: 768px) {
+    .main_image {
+        width: 100%;
+        height: auto;
+    }
+
+    .child_image img {
+        width: 100%;
+        margin-top:10px;
+        border:2px solid #33333300;
+
+    }
+    .child_image img:hover{
+        border:2px solid #3f3f3f;
+    }
+
+    .add_to_cart {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Mobile devices */
+@media screen and (max-width: 480px) {
+    .container {
+        padding: 10px;
+    }
+
+    .main_image {
+        width: 100%;
+        height: auto;
+    }
+
+    .child_image {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .child_image img {
+        width: 100%;
+        margin:10px;
+    }
+    .child_image img:hover{
+        border:1px solid #333;
+    }
+
+    .product_details h1 {
+        font-size: 20px;
+    }
+
+    .price {
+        font-size: 20px;
+    }
+
+    .add_to_cart {
+        grid-template-columns: 1fr;
+    }
+
+    .add_to_cart button {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .pickup_info, .gem_info {
+        font-size: 12px;
+    }
+}
