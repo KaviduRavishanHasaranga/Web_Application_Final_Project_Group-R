@@ -3,7 +3,7 @@
   margin: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  font-family: "Spartan", sans-serif;
+  font-family: "Open Sans", sans-serif;
   list-style: none;
   text-decoration: none;
 }
@@ -11,70 +11,267 @@ body {
   margin: 0px;
 }
 
-/* Contact Us Page CSS*/
+/*Common CSS S*/
+.abocontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .abodetails {
-  margin: 200px 100px 0;
+  width: 100%;
+  margin: 150px 100px 0;
   padding: 10px;
-  text-align: center;
-  align-content: center;
+  align-items: center;
 }
 .abodetails h2 {
   font-size: 50px;
+  font-weight: bolder;
+  text-align: center;
   text-transform: uppercase;
 }
 .abodetails h3 {
+  margin-top: 1em;
   font-size: 20px;
   text-transform: uppercase;
+  text-align: center;
 }
 .abodetails p {
-  font-size: 18px;
+  font-size: 1.2rem;
   text-align: center;
-  line-height: 1.5;
+  line-height: 2rem;
+}
+/* About Us Page CSS*/
+.aboimg {
+  text-align: center;
 }
 .aboimg img {
   width: 300px;
+  height: 300px;
   border: 1px solid;
 }
 
 /* Contact Us Page CSS*/
+#titles,
 #country {
-  text-transform: uppercase;
+  height: 40px;
+  width: 200px;
+  font-size: 16px;
+  padding: 0 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.form-container {
+  align-content: center;
+  border: 1px solid #ccc;
+  margin-top: 50px;
+  padding: 30px;
+}
+.user-details {
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 0 100px;
+}
+.grid-item {
+  padding: 1em 3em;
+  display: flex;
+  gap: 20px;
+}
+.item1,
+.item2,
+.item3,
+.item4,
+.item5 {
+  grid-column: 1/4;
 }
 
-.form-container {
-  border: 1px solid black;
-  margin: 1px 100px;
-  padding: 30px 75px;
+.box-1,
+.box-2,
+.box-3 {
+  flex-grow: 1;
+}
+.box-4 {
+  width: 630px;
+}
+
+.details {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.checkbox-container {
+  display: flex;
+  justify-content: flex-start; /* Align the checkboxes to the left */
+  gap: 20px; /* Space between checkboxes */
+}
+
+.checkbox-container label {
+  display: flex;
+  align-items: center;
+  margin-right: 15px; /* Optional: Adjusts spacing between checkboxes */
+}
+
+.checkbox-container input {
+  margin-right: 5px; /* Space between checkbox and label text */
+}
+
+.opt {
+  font-size: 1em;
+  line-height: 2.5;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0.5em;
 }
 
 .form-container form .user-details {
-  justify-content: space-between;
-}
-form .user-details .input-box {
-  width: calc(100% / 2 -20px);
-}
-.user-details .input-box input {
-  position: relative;
-  height: 30px;
-  padding: 0 10px;
-}
-.colum {
-  display: flex;
-  column-gap: 15px;
-}
-.user-details .details {
-  font-weight: bold;
+  justify-content: flex-start;
+  margin: 20px 0 12px 0;
 }
 
+form .user-details .input-box {
+  margin-bottom: 15px;
+}
+.user-details .input-box .details {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
 .req-star {
   color: red;
 }
-.submit-btn {
-  background-color: #007bff;
-  font-size: 14px;;
-  color: #ffffff;
-  border: none;
-  padding: 10px 20px;
+
+.user-details .input-box input {
+  height: 40px;
+  width: 100%;
+  outline: none;
   border-radius: 5px;
+  border: 1px solid #ccc;
+  padding-left: 15px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+.user-details .input-box input:focus {
+  border-color: #66abde;
+  box-shadow: 2px 2px 10px rgb(151, 192, 239);
+}
+.user-details .input-box select:focus {
+  outline: 1px solid;
+  outline-color: #66abde;
+  box-shadow: 2px 2px 10px rgb(151, 192, 239);
+}
+.user-details .input-box textarea:focus {
+  border-color: #66abde;
+  box-shadow: 2px 2px 10px rgb(151, 192, 239);
+}
+.message {
+  outline: none;
+  width: 100%;
+  height: 20vh;
+  border-radius: 5px;
+  padding: 15px;
+  border: 1px solid #ccc;
+}
+.btn-container {
+  margin-left: 50px;
+}
+.submit-btn {
+  width: 130px;
+  height: 45px;
+  font-size: 1em;
+  font-weight: 400;
+  background-color: #0c64e9;
+  border-radius: 10px;
+  color: white;
+  border: none;
   cursor: pointer;
+}
+.submit-btn:hover {
+  background-color: white;
+  border: 1px solid #0c64e9;
+  color: #0c64e9;
+}
+
+/* Event Page */
+.event-container {
+  margin: 140px 180px 0;
+}
+.event-container .event-title {
+  text-align: center;
+  font-size: 1rem;
+}
+.event-container .event-post {
+  border: 1px solid #ccc;
+  padding: 40px;
+}
+.event-container .event-post h3 {
+  font-size: 2rem;
+}
+.event-container .event-post h4 {
+  font-size: 1rem;
+  font-weight: 500;
+  color: rgb(125, 125, 125);
+}
+
+.event-post .event-img img {
+  width: 400px;
+  height: auto;
+}
+.img3 {
+  width: 120%;
+}
+.event-container .event-post p {
+  font-size: 1.1em;
+}
+.event-container .event-post span {
+  font-style: italic;
+}
+.event-container .event-post a {
+  font-size: 1rem;
+  text-decoration: underline;
+  text-transform: capitalize;
+}
+.event-container .event-post .read-more {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+.read-more:hover {
+  color: white;
+  background-color: black;
+  cursor: pointer;
+}
+
+/* Information Page */
+.info-container {
+  margin: 100px 100px 0;
+  padding: 50px;
+}
+.info-container .information {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 20px;
+}
+.info-container hr {
+  height: 3px;
+  background-color: #6a6a6a;
+  opacity: 50%;
+}
+
+.info-container .information .inf-img {
+  text-align: center;
+}
+.info-container .information img {
+  width: 50%;
+  margin-block: 100px;
+}
+.info-container .information .inf-list h2 {
+  font-size: 2rem;
+  font-weight: 900;
+}
+.info-container .information .inf-list h3 {
+  font-size: 1.4rem;
+  font-weight: 900;
+}
+.info-container .information .inf-list li {
+  list-style-image: url("../Images/red-symbol.png");
+  margin-block: 2rem;
+  font-size: 1.1rem;
 }

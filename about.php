@@ -1,52 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php include 'assets/header.php'; ?>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Royal Gemstone Kingdom</title>
-    <link rel="favicon" type="image/jpg" href="logo.jpg">
-
-    <!-- ==== CSS File Links ====-->
-    <link rel="stylesheet" href="css\style.css">
-    <link rel="stylesheet" href="css\subpages.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
-</head>
-
-<body>
-    <!--===Header Section Start===-->
-    <header>
-        <nav class="navbar">
-            <div class="logo">
-                <img src="Images/logo.png">
-            </div>
-
-            <div>
-                <ul class="navmenu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="shop.html">Shop</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="events.html">Events</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
-                </ul>
-            </div>
-
-            <div class="nav-icon">
-                <a href="#"><i class='bx bx-search'></i></a>
-                <a href="#"><i class='bx bxs-user'></i></a>
-                <a href="#"><i class='bx bx-cart'></i></a>
-
-                <div class="bx bx-menu" id="menu-icon"></div>
-            </div>
-        </nav>
-    </header>
-    <!--===Header Section Close===-->
-
+<div class="abocontainer">
     <div class="abodetails">
         <h2>About Gems in Sri Lanka</h2>
         <h3>With more than 30 years of experience in Gem business, we being most trustworthy genuine Gemstones Dealers,
@@ -66,12 +20,12 @@
             <br><br>
         </p>
         <div class="aboimg">
-            <img src="Images\PINK SAPPHIRE.jpg">
-            <img src="Images\PINK SAPPHIRE.jpg">
-            <img src="Images\PINK SAPPHIRE.jpg">
-            <img src="Images\PINK SAPPHIRE.jpg">
+            <img src="Images\aboutimg1.jpg">
+            <img src="Images\aboutimg2.jpg">
+            <img src="Images\aboutimg3.jpg">
+            <img src="Images\aboutimg4.jpg">
         </div>
-            <br><br>
+        <br><br>
         <p>
             We sell natural precious & semi-precious gemstones only.
             Our gemstones give very high energy for astrological uses.
@@ -92,9 +46,6 @@
             <br><br>
         </p>
     </div>
+</div>
 
-
-
-</body>
-
-</html>
+<?php include 'assets/footer.php'; ?>

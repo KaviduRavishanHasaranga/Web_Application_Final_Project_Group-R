@@ -3,13 +3,14 @@
   margin: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  font-family: "Spartan", sans-serif;
+  font-family: "Open Sans", sans-serif;
   list-style: none;
   text-decoration: none;
 }
 body {
   margin: 0px;
 }
+
 .navbar {
   background-color: rgb(240, 240, 238);
   position: fixed;
@@ -64,10 +65,12 @@ body {
 section {
   padding: 5% 10%;
 }
+
+/*Hero Sesction*/
 .main-home {
   width: 100%;
   height: 100vh;
-  background-image: url(/Images/homegem.jpg);
+  background-image: url('../Images/homegem.jpg');
   background-position: center;
   background-size: cover;
   display: grid;
@@ -87,8 +90,9 @@ section {
   font-size: 50px;
   font-family: serif;
 }
+
 .section2 {
-  background-color: rgb(235, 233, 232);
+  background-color: rgb(255, 255, 255);
 }
 .features {
   display: flex;
@@ -102,39 +106,239 @@ section {
   font-size: 40px;
   margin-bottom: 0.5rem;
 }
-
+/*Gems Section - 1*/
 .section3 {
-  background-color: #d5c8c8;
+  background-color: #f0e9e9;
 }
 .section3 h3 {
-  padding-bottom: 10px;
+  padding-bottom: 1rem;
+  font-size: 2rem;
 }
 .section3 p {
-  padding-bottom: 30px;
+  padding-bottom: 2rem;
+  font-size: 1rem;
 }
-.gemstone-container {
-  width: 1203px;
+.section3 .gemstone-container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
   gap: 1px;
-  background-color: #ede8e8;
 }
-.gemstone-item {
+
+.section3 .gemstone-container .gemstone-item {
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.138);
+  background-color: rgb(236, 236, 236);
+}
+.section3 .gemstone-container .gemstone-item img {
+  width: 100%;
+  height: 75%;
+  cursor: pointer;
+}
+.section3 .gemstone-container .gemstone-item h5,
+a {
+  margin-top: 15px;
+  font-size: 12px;
+  font-weight: normal;
+  color: rgb(0, 0, 0);
+}
+
+.section3 .gemstone-container .gemstone-item h3 {
+  color: black;
+  margin: 15px;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+/*Review Section CSS*/
+.section4 {
+  background-color: black;
+}
+.heading {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  padding-bottom: 1.5rem;
+  font-size: 2.5rem;
+}
+
+.heading span {
+  color: rgb(221, 208, 140);
+  text-transform: uppercase;
+}
+.review .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 1.5rem;
+  color: rgb(0, 0, 0);
+  background-color: rgb(0, 0, 0);
+}
+
+.review .box-container .box {
+  border: var(--border);
+  text-align: center;
+  padding: 3rem 1rem;
+  border: 2px solid rgb(200, 200, 200);
+}
+
+.review .box-container .box p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: rgb(255, 255, 255);
+  padding: 1rem 0;
+}
+
+.review .box-container .box .user {
+  height: 7rem;
+  width: 7rem;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 1rem;
+}
+
+.review .box-container .box h3 {
+  padding: 8px;
+  font-size: 1.2rem;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+}
+.review .box-container .box .stars i {
+  font-size: 1rem;
+  color: white;
+}
+/*6th Section CSS*/
+/* .section5 {
+  padding: 30px 90px;
+}
+.section5 .contacts-container {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+}
+.section5 .contacts-container .contact {
+  padding: 5px;
+}
+
+.section5 .contacts-container .contact img {
+  width: 60px;
+  font-size: 4rem;
+}
+.section5 .contacts-container .contact h2 {
+  font-size: 1.2rem;
+  margin-top: 0.5em;
+}
+.section5 .contacts-container .contact h2:hover {
+  color: rgb(33, 65, 244);
+}
+
+.section5 .contacts-container .contact h3 {
+  font-weight: 300;
+  font-size: 1rem;
+}*/
+
+/*Footer Section CSS*/
+footer {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 30px 60px;
+}
+footer .container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr 1.4fr;
+  grid-gap: 10px;
+  padding: 15px;
+}
+footer .container .footer-col {
+  padding: 5px;
+}
+footer .container .footer-col h2 {
+  position: relative;
+  color: gray;
+  font-size: 1.1rem;
+  font-weight: 900;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+footer .container .footer-col p {
+  color: gray;
+}
+footer .container .footer-col h2::before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 50px;
+  height: 2px;
+  background: red;
+  opacity: 60%;
+}
+footer .container .footer-col li a {
+  font-size: 1rem;
+  line-height: 2;
+  color: gray;
+}
+footer .container .footer-col hr {
+  opacity: 30%;
+}
+footer .container .footer-col .gia-img {
+  text-align: justify;
+}
+footer .container .footer-col .gia-img img {
+  width: 100%;
+  height: auto;
+  background-color: white;
+}
+.copyright-text {
+  padding: 10px;
+  background-color: rgb(132, 132, 132);
+  color: white;
+  font-family: cursive;
   text-align: center;
 }
-.gemstone-item p {
-  width: auto;
-  height: 60px;
+.copyright-text span {
+  font-weight: 600;
 }
 
-.gemstone-item img {
-  width: 300px;
-  height: 300px;
+/* Table Contact */
+.section6 {
+  padding: 80px 40px 0;
 }
-
-.gemstone-item p {
-  font-size: 16px;
-  font-weight: bold;
-  margin-top: 30px;
-  font-family: "Lucida Sans", "Lucida Sans Regular";
+table {
+  border-collapse: collapse;
+  margin: 0 60px;
+}
+table td {
+  width: 25%;
+  padding: 60px 16px;
+  border-top: 2px solid  #cccccc45;
+  border-bottom: 2px solid #cccccc45;
+}
+.td2,.td3{
+  border: 2px solid  #cccccc45;
+}
+.td4{
+  border-left: 2px solid  #cccccc45;
+}
+.td1{
+  border-right: 2px solid  #cccccc45;
+}
+.b3 h3{
+  visibility: hidden;
+}
+table .contact img {
+  width: 60px;
+  font-size: 4rem;
+}
+table .contact h2 {
+  font-size: 1.2rem;
+  margin-top: 0.5em;
+}
+table .contact h2:hover {
+  color: rgb(33, 65, 244);
+}
+table .contact h3 {
+  font-weight: 300;
+  font-size: 1rem;
 }
