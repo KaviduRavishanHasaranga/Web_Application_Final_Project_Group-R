@@ -42,6 +42,7 @@
     ?>
 
         <!-- Image Box -->
+         <!--
         <div class="images">
             <img class="main_image" src="Images/<?php echo htmlspecialchars($row['main_image']); ?>" id="mainImg">
             <div class="child_image">
@@ -56,7 +57,31 @@
                 </div>
             </div>
         </div>  
-        
+    -->
+
+        <!--new image box -->
+
+        <div class="images">
+        <!-- Main Image -->
+        <img class="main_image" src="data:image/jpeg;base64,<?php echo htmlspecialchars($row['main_image']); ?>" id="mainImg">
+    
+        <div class="child_image">
+        <!-- Child Image 1 -->
+            <div class="child_image_col">
+                 <img src="data:image/jpeg;base64,<?php echo htmlspecialchars($row['image_1']); ?>" class="childImg">
+            </div>
+        <!-- Child Image 2 -->
+            <div class="child_image_col">
+                 <img src="data:image/jpeg;base64,<?php echo htmlspecialchars($row['image_2']); ?>" class="childImg">
+            </div>
+        <!-- Child Image 3 -->
+            <div class="child_image_col">
+                <img src="data:image/jpeg;base64,<?php echo htmlspecialchars($row['image_3']); ?>" class="childImg">
+            </div>
+         </div>
+        </div>
+
+
         <!-- Product Details -->
         <div class="product_details">
             <h1><?php echo htmlspecialchars($row['name']); ?></h1>
