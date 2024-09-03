@@ -18,6 +18,7 @@ if ($result->num_rows > 0) {
             echo '<h3>' . htmlspecialchars($row["title"]) .'</h3>';
             echo '<p class="para_event">' . htmlspecialchars($row["content"]) .'</p>';
             echo '</div>';
+            echo '<br>';
             echo '<hr>';
         echo '</section>';
     }
