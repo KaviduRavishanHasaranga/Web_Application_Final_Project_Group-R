@@ -113,13 +113,13 @@ CREATE TABLE `blog` (
 -- Table structure for table `event`
 --
 
-CREATE TABLE `event` (
-  `event_id` int(10) NOT NULL AUTO_INCREMENT PRIMARY KEY,
-  `event_title` varchar(255) NOT NULL,
-  `event_images` varchar(255) NOT NULL,
-  `event_content` text DEFAULT NULL,
-  `is_deleted` tinyint(1) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+CREATE TABLE events (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    event_title VARCHAR(255) NOT NULL,
+    event_images LONGBLOB,
+    event_content TEXT NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+)ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Indexes for dumped tables
