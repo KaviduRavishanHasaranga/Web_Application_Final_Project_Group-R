@@ -14,9 +14,9 @@ body {
 .navbar {
   background-color: rgb(240, 240, 238);
   position: fixed;
-  right: 0;
   top: 0;
   width: 100%;
+  height: 120px;
   z-index: 1000;
   display: flex;
   align-items: center;
@@ -27,28 +27,37 @@ body {
   width: 150px;
   height: auto;
 }
+
 .navmenu {
   display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  justify-content: center; /* Centers items horizontally */
+  align-items: center; /* Centers items vertically */
+  line-height: 2rem;
 }
 .navmenu a {
   color: black;
-  font-size: 18px;
-  padding: 10px 15px;
-  font-weight: 4500;
+  font-size: 17px;
+  padding: 10px 10px;
   transition: all 0.42s ease;
 }
-.navmenu a:hover {
+.navmenu a:hover,
+.navmenu a.active {
   color: rgb(18, 136, 227);
+  text-decoration: underline;
 }
+
 .nav-icon {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 .nav-icon i {
-  margin-right: 20px;
+ margin: 5px;
   align-items: center;
   color: black;
-  font-size: 25px;
+  font-size: 30px;
   font-weight: 400;
   transition: all 0.42s ease;
 }
@@ -62,6 +71,50 @@ body {
   z-index: 10001;
   cursor: pointer;
 }
+
+/* Responsive Styles */
+@media (max-width: 880px) {
+  .navmenu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100px;
+    right: 0;
+    background-color: rgb(240, 240, 238);
+    text-align: center;
+  }
+  .navmenu li {
+    padding: 10px 0;
+  }
+  .navmenu li:hover {
+    background-color: rgb(190, 190, 190);
+  }
+  .navmenu.active {
+    display: flex;
+  }
+  .navmenu a:hover,
+  .navmenu a.active {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+  }
+  .navmenu a {
+    text-align: center;
+    color: #898989;
+  }
+  #menu-icon {
+    display: block;
+    margin-top: 14px;
+    font-size: 40px;
+  }
+}
+
+/* For larger screens, hide the menu icon */
+@media (min-width: 880px) {
+  #menu-icon {
+    display: none;
+  }
+}
+
 section {
   padding: 5% 10%;
 }
@@ -70,7 +123,7 @@ section {
 .main-home {
   width: 100%;
   height: 100vh;
-  background-image: url('../Images/homegem.jpg');
+  background-image: url("../Images/homegem.jpg");
   background-position: center;
   background-size: cover;
   display: grid;
@@ -243,17 +296,17 @@ footer {
   height: auto;
   padding: 30px 60px;
 }
-footer .container {
+footer .fcontainer {
   width: 100%;
   display: grid;
   grid-template-columns: 1.4fr 1fr 1fr 1.4fr;
   grid-gap: 10px;
   padding: 15px;
 }
-footer .container .footer-col {
+footer .fcontainer .footer-col {
   padding: 5px;
 }
-footer .container .footer-col h2 {
+footer .fcontainer .footer-col h2 {
   position: relative;
   color: gray;
   font-size: 1.1rem;
@@ -261,10 +314,10 @@ footer .container .footer-col h2 {
   margin-bottom: 15px;
   text-transform: uppercase;
 }
-footer .container .footer-col p {
+footer .fcontainer .footer-col p {
   color: gray;
 }
-footer .container .footer-col h2::before {
+footer .fcontainer .footer-col h2::before {
   content: "";
   position: absolute;
   bottom: -5px;
@@ -274,18 +327,18 @@ footer .container .footer-col h2::before {
   background: red;
   opacity: 60%;
 }
-footer .container .footer-col li a {
+footer .fcontainer .footer-col li a {
   font-size: 1rem;
   line-height: 2;
   color: gray;
 }
-footer .container .footer-col hr {
+footer .fcontainer .footer-col hr {
   opacity: 30%;
 }
-footer .container .footer-col .gia-img {
+footer .fcontainer .footer-col .gia-img {
   text-align: justify;
 }
-footer .container .footer-col .gia-img img {
+footer .fcontainer .footer-col .gia-img img {
   width: 100%;
   height: auto;
   background-color: white;
@@ -312,19 +365,20 @@ table {
 table td {
   width: 25%;
   padding: 60px 16px;
-  border-top: 2px solid  #cccccc45;
+  border-top: 2px solid #cccccc45;
   border-bottom: 2px solid #cccccc45;
 }
-.td2,.td3{
-  border: 2px solid  #cccccc45;
+.td2,
+.td3 {
+  border: 2px solid #cccccc45;
 }
-.td4{
-  border-left: 2px solid  #cccccc45;
+.td4 {
+  border-left: 2px solid #cccccc45;
 }
-.td1{
-  border-right: 2px solid  #cccccc45;
+.td1 {
+  border-right: 2px solid #cccccc45;
 }
-.b3 h3{
+.b3 h3 {
   visibility: hidden;
 }
 table .contact img {

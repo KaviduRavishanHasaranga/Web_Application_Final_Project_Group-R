@@ -1,9 +1,51 @@
-<?php
+<?php session_start();
 include 'assets/header.php';
 include 'connection.php';
 
+// Check if the "Add to Cart" button was clicked
+if (isset($_POST['add_to_cart'])) {
+    if (!isset($_SESSION['user_id'])) {
+        // User not signed in, show an alert
+        echo "<script>alert('Please sign in to add items to your cart.');</script>";
+    } else {
+        // User is signed in, proceed with adding to cart
+        $productId = $_POST['product_id'];
+
+        // Fetch product details from the database
+        $sql = "SELECT id, product_name, price, image1_base64 FROM products WHERE id = '$productId'";
+        $result = $conn->query($sql);
+
+        if ($result->num_rows > 0) {
+            $product = $result->fetch_assoc();
+
+            // Initialize the cart if not already done
+            if (!isset($_SESSION['cart'])) {
+                $_SESSION['cart'] = [];
+            }
+
+            // Check if the product is already in the cart
+            if (isset($_SESSION['cart'][$productId])) {
+                $_SESSION['cart'][$productId]['quantity'] += 1; // Increase quantity
+            } else {
+                // Add the product to the cart with quantity 1
+                $_SESSION['cart'][$productId] = [
+                    'name' => $product['product_name'],
+                    'price' => $product['price'],
+                    'image' => $product['image1_base64'],
+                    'quantity' => 1
+                ];
+            }
+        }
+
+        // Redirect back to the shop page (or another page)
+        header("Location: shop_data.php?category=" . $_POST['category']);
+        exit();
+    }
+}
+
 // Get the category from the URL
 $category = isset($_GET['category']) ? $_GET['category'] : 'default-category';
+
 
 // Customize the description based on the category
 $descriptions = [
@@ -45,7 +87,6 @@ $backgroundImage = 'DescriptionBgImg/' . htmlspecialchars($category) . '.jpg';
             <p><?php echo $description; ?></p>
         </div>
     </div>
-
 
     <div class="sub-container">
         <!-- Filter Section Code -->
@@ -102,7 +143,7 @@ $backgroundImage = 'DescriptionBgImg/' . htmlspecialchars($category) . '.jpg';
             }
 
             // Query to fetch product data based on the category
-            $sql = "SELECT product_name, image1_base64, price, description FROM products WHERE category = '$category'";
+            $sql = "SELECT id, product_name, image1_base64, price, description FROM products WHERE category = '$category'";
             $result = $conn->query($sql);
 
             // Check if any results were returned
@@ -116,7 +157,17 @@ $backgroundImage = 'DescriptionBgImg/' . htmlspecialchars($category) . '.jpg';
                     echo '<div class="price">';
                     echo '<span class="new-price">$' . $row["price"] . '</span>';
                     echo '</div>';
-                    echo '<button class="add-to-cart">Add to Cart 🛒</button>';
+
+                    if (isset($_SESSION['user_id'])) {
+                        echo '<form method="POST" action="shop_data.php">';
+                        echo '<input type="hidden" name="product_id" value="' . $row["id"] . '">';
+                        echo '<input type="hidden" name="category" value="' . $category . '">';
+                        echo '<button type="submit" name="add_to_cart" class="add-to-cart">Add to Cart 🛒</button>';
+                        echo '</form>';
+                    } else {
+                        echo '<button onclick="alert(\'Please sign in to add items to your cart.\')" class="add-to-cart">Add to Cart 🛒</button>';
+                    }
+
                     echo '</div>';
                 }
             } else {

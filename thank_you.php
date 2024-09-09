@@ -1,14 +1,9 @@
+<!-- thank_you.php -->
+<?php include 'assets/header.php'; ?>
+
 <?php
 
 ?>
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Success</title>
-
     <link rel="stylesheet" href="css\subpages.css">
 
     <style>
@@ -56,10 +51,12 @@
 <body>
     <div class="container">
         <image src="Images\greentick.png" class="succes-img">
-            <h1>Thank you for your submission, our team member will contact you about your request</h1>
+            <h1>Payment Sucessfull</h1>
 
-            <button class="btn"><a href="contact.php">Return to the form</a></button>
+            <button class="btn"><a href="index.php">Return to the Home</a></button>
     </div>
 </body>
 
 </html>
+
+<?php include 'assets/footer.php'; ?>

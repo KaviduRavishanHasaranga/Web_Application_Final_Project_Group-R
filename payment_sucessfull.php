@@ -56,7 +56,7 @@
 <body>
     <div class="container">
         <image src="Images\greentick.png" class="succes-img">
-            <h1>Thank you for your submission, our team member will contact you about your request</h1>
+            <h1>Payment Sucessfull</h1>
 
             <button class="btn"><a href="contact.php">Return to the form</a></button>
     </div>

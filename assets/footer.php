@@ -1,6 +1,6 @@
     <!--===Footer Section Start===-->
     <footer class="footer">
-        <div class="container">
+        <div class="fcontainer">
             <div class="footer-col">
                 <h2>Our Specialties</h2>
                 <ul>
