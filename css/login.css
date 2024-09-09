@@ -9,9 +9,9 @@
   }
   .container {
     background-color: #fff;
-    width: 800px;
+    width: 600px;
     padding: 1.5rem;
-    margin: 150px auto 0;
+    margin: 130px auto 10px;
     border-radius: 10px;
     box-shadow: 0 2px 35px black;
   }
@@ -62,7 +62,7 @@
   }
   input:focus ~ label,
   input:not(:placeholder-shown)~label{
-    top: -1.3em;
+    top: -1.5em;
     font-size: 15px;
     color: hsl(0, 0%, 36%);
   }

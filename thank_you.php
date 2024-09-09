@@ -1,9 +1,6 @@
 <!-- thank_you.php -->
 <?php include 'assets/header.php'; ?>
 
-<?php
-
-?>
     <link rel="stylesheet" href="css\subpages.css">
 
     <style>

@@ -1,4 +1,4 @@
-<?php session_start();
+<?php
 include 'assets/header.php';
 include 'connection.php';
 

@@ -2,47 +2,90 @@
 session_start();
 include 'connection.php';
 
-
-if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    // Gather customer details
-    $first_name = $_POST['first_name'];
-    $last_name = $_POST['last_name'];
-    $company = $_POST['company'];
-    $address = $_POST['address'];
-    $apartment = $_POST['apartment'];
-    $city = $_POST['city'];
-    $state = $_POST['state'];
-    $zip_code = $_POST['zip_code'];
-    $country = $_POST['country'];
-    $phone = $_POST['phone'];
-    $email = $_POST['email'];
-    $delivery_method = $_POST['delivery'];
-    $total_amount = $totalPrice; // Assuming $totalPrice is calculated earlier in the code
-
-    // Insert into Orders table
-    $stmt = $conn->prepare("INSERT INTO Orders (first_name, last_name, company, address, apartment, city, state, zip_code, country, phone, email, delivery_method, total_amount) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
-    $stmt->bind_param('ssssssssssssd', $first_name, $last_name, $company, $address, $apartment, $city, $state, $zip_code, $country, $phone, $email, $delivery_method, $total_amount);
-    $stmt->execute();
-    $order_id = $stmt->insert_id; // Get the ID of the newly created order
-
-    // Gather payment details
-    $payment_method = $_POST['payment_method'];
-    $card_number = $_POST['card_number'];
-    $card_expiry = $_POST['card_expiry'];
-    $card_cvc = $_POST['card_cvc'];
-    $name_on_card = $_POST['name_on_card'];
-
-    // Insert into Payments table
-    $stmt = $conn->prepare("INSERT INTO Payments (order_id, payment_method, card_number, card_expiry, card_cvc, name_on_card, billing_address) VALUES (?, ?, ?, ?, ?, ?, ?)");
-    $billing_address = $address; // Assuming the billing address is the same as the shipping address
-    $stmt->bind_param('issssss', $order_id, $payment_method, $card_number, $card_expiry, $card_cvc, $name_on_card, $billing_address);
-    $stmt->execute();
-
-    // Clear the cart session after successful order
-    unset($_SESSION['cart']);
-
-    // Redirect to a thank you page
-    header('Location: thank_you.php');
+// Check if user is logged in
+if (!isset($_SESSION['user_id'])) {
+    echo "You need to log in to checkout.";
     exit();
 }
+
+$userId = $_SESSION['user_id'];
+$orderDate = date('Y-m-d H:i:s');
+$totalPrice = 0;
+
+// Calculate total price
+if (isset($_SESSION['cart']) && !empty($_SESSION['cart'])) {
+    $cartItems = array_keys($_SESSION['cart']);
+    $cartItemsString = implode(',', array_map('intval', $cartItems));
+
+    $sql = "SELECT id, price FROM products WHERE id IN ($cartItemsString)";
+    $result = $conn->query($sql);
+
+    if ($result->num_rows > 0) {
+        while ($row = $result->fetch_assoc()) {
+            $productId = $row['id'];
+            $productPrice = $row['price'];
+            $productQuantity = $_SESSION['cart'][$productId]['quantity'];
+
+            $totalPrice += $productPrice * $productQuantity;
+        }
+    } else {
+        echo "Some items in your cart are no longer available.";
+        exit();
+    }
+} else {
+    echo "Your cart is empty.";
+    exit();
+}
+
+// Insert order into orders table
+$sql = "INSERT INTO orders (user_id, order_date, total_price, status) VALUES (?, ?, ?, 'Pending')";
+$stmt = $conn->prepare($sql);
+$stmt->bind_param("isd", $userId, $orderDate, $totalPrice);
+$stmt->execute();
+$orderId = $stmt->insert_id; // Get the last inserted order ID
+$stmt->close();
+
+// Insert order items into order_items table
+if (isset($_SESSION['cart']) && !empty($_SESSION['cart'])) {
+    $cartItems = array_keys($_SESSION['cart']);
+    $cartItemsString = implode(',', array_map('intval', $cartItems));
+
+    $sql = "SELECT id, price FROM products WHERE id IN ($cartItemsString)";
+    $result = $conn->query($sql);
+
+    if ($result->num_rows > 0) {
+        while ($row = $result->fetch_assoc()) {
+            $productId = $row['id'];
+            $productPrice = $row['price'];
+            $productQuantity = $_SESSION['cart'][$productId]['quantity'];
+
+            $sql = "INSERT INTO order_items (order_id, product_id, quantity, price_at_purchase) VALUES (?, ?, ?, ?)";
+            $stmt = $conn->prepare($sql);
+            $stmt->bind_param("iiid", $orderId, $productId, $productQuantity, $productPrice);
+            $stmt->execute();
+            $stmt->close();
+        }
+    }
+}
+
+// Insert payment into payments table
+$paymentMethod = $_POST['payment_method'];
+$cardNumber = $_POST['card_number']; // In practice, use a secure payment gateway
+$cardExpiry = $_POST['card_expiry'];
+$cardCvc = $_POST['card_cvc'];
+$nameOnCard = $_POST['name_on_card'];
+
+// For demonstration purposes, you may want to handle these details securely
+$sql = "INSERT INTO payments (order_id, payment_date, amount, payment_method, payment_status) VALUES (?, ?, ?, ?, 'Completed')";
+$stmt = $conn->prepare($sql);
+$stmt->bind_param("isds", $orderId, $orderDate, $totalPrice, $paymentMethod);
+$stmt->execute();
+$stmt->close();
+
+// Clear cart
+unset($_SESSION['cart']);
+
+// Redirect to thank you page or order confirmation
+header("Location: thank_you.php");
+exit();
 ?>

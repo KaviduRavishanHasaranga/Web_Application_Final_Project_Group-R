@@ -1,17 +1,30 @@
-// Get references to the buttons and forms
-const signUpButton = document.getElementById('signUpButton');
-const signInButton = document.getElementById('signInButton');
-const signInForm = document.getElementById('signIn');
-const signUpForm = document.getElementById('signUp');
-
-// Add event listener for Sign Up button
-signUpButton.addEventListener('click', function() {
-    signInForm.style.display = "none";
-    signUpForm.style.display = "block";
+// Handle form switching
+document.getElementById('signUpButton').addEventListener('click', function() {
+    document.getElementById('signIn').style.display = 'none';
+    document.getElementById('signUp').style.display = 'block';
+    
+    // Clear error or success messages
+    clearMessages();
 });
 
-// Add event listener for Sign In button
-signInButton.addEventListener('click', function() {
-    signInForm.style.display = "block";
-    signUpForm.style.display = "none";
+document.getElementById('signInButton').addEventListener('click', function() {
+    document.getElementById('signUp').style.display = 'none';
+    document.getElementById('signIn').style.display = 'block';
+    
+    // Clear error or success messages
+    clearMessages();
 });
+
+// Function to clear error and success messages
+function clearMessages() {
+    const errorMessages = document.querySelectorAll('.error');
+    const successMessages = document.querySelectorAll('.success');
+    
+    errorMessages.forEach(function(message) {
+        message.textContent = ''; // Clear error text
+    });
+
+    successMessages.forEach(function(message) {
+        message.textContent = ''; // Clear success text
+    });
+}

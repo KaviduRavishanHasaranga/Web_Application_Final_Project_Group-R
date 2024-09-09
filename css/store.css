@@ -129,7 +129,7 @@ body {
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   width: 100%; /* Default to 100% width */
-  max-width: 300px; /* Constrain the card to a max width */
+  max-width: 250px; /* Constrain the card to a max width */
   text-align: center;
   padding: 15px;
   transition: transform 0.3s;

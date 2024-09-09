@@ -39,7 +39,6 @@
                             <span class="req-star">*</span><br>
                             <select id="country" name="country" class="form-control" required>
                                 <option value="">Select</option>
-                                <option value="United Kingdom">United Kingdom</option>
                                 <option value="Albania">Albania</option>
                                 <option value="Andorra">Andorra</option>
                                 <option value="Austria">Austria</option>
@@ -50,14 +49,22 @@
                                 <option value="Croatia (Hrvatska)">Croatia (Hrvatska)</option>
                                 <option value="Cyprus">Cyprus</option>
                                 <option value="Czech Republic">Czech Republic</option>
+                                <option value="Denmark">Denmark</option>
+                                <option value="Estonia">Estonia</option>
+                                <option value="Faroe Islands">Faroe Islands</option>
+                                <option value="Finland">Finland</option>
                                 <option value="France">France</option>
-                                <option value="Gibraltar">Gibraltar</option>
                                 <option value="Germany">Germany</option>
                                 <option value="Greece">Greece</option>
+                                <option value="Greenland">Greenland</option>
                                 <option value="Holy See (Vatican City State)">Holy See (Vatican City State)</option>
                                 <option value="Hungary">Hungary</option>
+                                <option value="Iceland">Iceland</option>
+                                <option value="Ireland">Ireland</option>
                                 <option value="Italy">Italy</option>
+                                <option value="Latvia">Latvia</option>
                                 <option value="Liechtenstein">Liechtenstein</option>
+                                <option value="Lithuania">Lithuania</option>
                                 <option value="Luxembourg">Luxembourg</option>
                                 <option value="Macedonia">Macedonia</option>
                                 <option value="Malta">Malta</option>
@@ -65,6 +72,7 @@
                                 <option value="Monaco">Monaco</option>
                                 <option value="Montenegro">Montenegro</option>
                                 <option value="Netherlands">Netherlands</option>
+                                <option value="Norway">Norway</option>
                                 <option value="Poland">Poland</option>
                                 <option value="Portugal">Portugal</option>
                                 <option value="Romania">Romania</option>
@@ -73,21 +81,12 @@
                                 <option value="Slovakia">Slovakia</option>
                                 <option value="Slovenia">Slovenia</option>
                                 <option value="Spain">Spain</option>
-                                <option value="Ukraine">Ukraine</option>
-                                <option value="Denmark">Denmark</option>
-                                <option value="Estonia">Estonia</option>
-                                <option value="Faroe Islands">Faroe Islands</option>
-                                <option value="Finland">Finland</option>
-                                <option value="Greenland">Greenland</option>
-                                <option value="Iceland">Iceland</option>
-                                <option value="Ireland">Ireland</option>
-                                <option value="Latvia">Latvia</option>
-                                <option value="Lithuania">Lithuania</option>
-                                <option value="Norway">Norway</option>
+                                <option value="Sri Lanka">Sri Lanka</option>
                                 <option value="Svalbard and Jan Mayen Islands">Svalbard and Jan Mayen Islands</option>
                                 <option value="Sweden">Sweden</option>
                                 <option value="Switzerland">Switzerland</option>
                                 <option value="Turkey">Turkey</option>
+                                <option value="Ukraine">Ukraine</option>
                             </select>
                         </div>
                         <div class="input-box box-3">
@@ -140,4 +139,5 @@
     </div>
 </div>
 
+<script src="js\script.js"></script>
 <?php include 'assets/footer.php'; ?>

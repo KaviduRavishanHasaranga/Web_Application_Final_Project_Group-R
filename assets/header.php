@@ -1,5 +1,6 @@
 <?php
-session_start(); // Start the session at the beginning of the file
+session_start();
+include 'connection.php'; // Include your database connection
 ?>
 
 <!DOCTYPE html>
@@ -54,10 +55,9 @@ session_start(); // Start the session at the beginning of the file
             <div class="nav-icon">
                 <a href="#"><i class='bx bx-search'></i></a>
                 <?php if (isset($_SESSION['user_id'])): ?>
-                    <a href="logout.php"><i class='bx bxs-user'></i>Logout</a>
+                    <a href="logout.php"><i class='bx bxs-user'></i>Log out</a>
                 <?php else: ?>
-                    <a href="sign_in.php"><i class='bx bxs-user'></i>SignIn</a>
-                    <a href="sign_up.php"><i class='bx bxs-user-plus'></i>SignUp</a>
+                    <a href="sign_in.php"><i class='bx bxs-user'></i>Sign In</a>
                 <?php endif; ?>
                 <a href="checkout.php"><i class='bx bx-cart'></i></a>
                 <div class="bx bx-menu" id="menu-icon"></div>
