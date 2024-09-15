@@ -461,3 +461,25 @@ hr{
 .ship{
   line-height:1.6em;
 }
+
+.cart-qty-update{
+  width: 50px;
+  padding: 1px 5px;
+}
+
+.update-quantity {
+  background-color: transparent;
+  color: rgb(73, 73, 73); /* White text color */
+  border: none; /* Remove border */
+  padding: 1px 5px; /* Add padding */
+  border-radius: 4px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 14px; /* Set font size */
+  text-decoration: underline;
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.remove-from-cart{
+  padding: 1px 5px;
+  border-radius: 5px;
+}

@@ -49,22 +49,22 @@ $category = isset($_GET['category']) ? $_GET['category'] : 'default-category';
 
 // Customize the description based on the category
 $descriptions = [
-    'blue-sapphire' => 'Blue Sapphires are renowned for their deep, royal blue hue, symbolizing wisdom, virtue, and good fortune. They are often associated with loyalty and trust, making them a popular choice for engagement rings and other meaningful jewelry.',
-    'ruby' => 'Rubies are celebrated for their vibrant red color, representing love, passion, and power. This gemstone is one of the most valuable precious stones, known for its exceptional hardness and brilliant shine.',
-    'yellow-sapphire' => 'Yellow Sapphires are prized for their sunny, golden hue, symbolizing prosperity, wisdom, and success. They are often worn to attract wealth and improve financial status.',
-    'pink-sapphire' => 'Pink Sapphires offer a delicate and romantic pink hue, symbolizing love, compassion, and emotional healing. They are a popular alternative to traditional engagement stones due to their unique color.',
-    'white-sapphire' => 'White Sapphires are known for their clear and sparkling appearance, often used as a diamond alternative. They symbolize clarity, purity, and spiritual wisdom.',
-    'padparadscha' => 'Padparadscha Sapphires are highly sought after for their unique and rare pink-orange color, resembling the hues of a lotus flower. This gemstone symbolizes rare beauty and elegance.',
-    'star-sapphire' => 'Star Sapphires display a mesmerizing star-like pattern, known as asterism, when viewed under light. They symbolize destiny, divine guidance, and protection.',
-    'purple-sapphire' => 'Purple Sapphires are admired for their rich and regal purple tones, symbolizing royalty, luxury, and wisdom. They are a striking choice for those seeking a unique and vibrant gemstone.',
-    'garnet' => 'Garnets come in a variety of colors, with deep red being the most well-known. They symbolize friendship, trust, and loyalty. Garnets are also believed to inspire love and devotion.',
-    'tourmaline' => 'Tourmaline is known for its wide array of colors, from vibrant pinks to deep greens. This versatile gemstone is believed to protect against negative energy and enhance understanding and compassion.',
-    'chrysoberyl' => 'Chrysoberyl gemstones, including the rare Alexandrite, are known for their brilliance and striking color-changing properties. They symbolize luck, protection, and balance.',
-    'aquamarine' => 'Aquamarine gemstones are prized for their serene blue color, reminiscent of the sea. They symbolize tranquility, courage, and clear communication, making them a favorite for those seeking inner peace.',
-    'topaz' => 'Topaz comes in various colors, including blue, yellow, and pink. It is believed to bring joy, generosity, abundance, and good health. Blue Topaz, in particular, is associated with calmness and emotional stability.',
-    'spinel' => 'Spinel gemstones are valued for their brilliance and wide range of colors, including vibrant reds, pinks, and blues. They symbolize renewal, revitalization, and protection.',
-    'amethyst' => 'Amethyst is celebrated for its stunning range of purple shades, symbolizing peace, stability, and spiritual awareness. It is often used to calm the mind and protect against negative energy.',
-    'moonstone' => 'Moonstone is admired for its ethereal glow and unique play-of-color, resembling the light of the moon. It symbolizes intuition, balance, and new beginnings.',
+    'Blue Sapphire' => 'Blue Sapphires are renowned for their deep, royal blue hue, symbolizing wisdom, virtue, and good fortune. They are often associated with loyalty and trust, making them a popular choice for engagement rings and other meaningful jewelry.',
+    'Ruby' => 'Rubies are celebrated for their vibrant red color, representing love, passion, and power. This gemstone is one of the most valuable precious stones, known for its exceptional hardness and brilliant shine.',
+    'Yellow Sapphire' => 'Yellow Sapphires are prized for their sunny, golden hue, symbolizing prosperity, wisdom, and success. They are often worn to attract wealth and improve financial status.',
+    'Pink Sapphire' => 'Pink Sapphires offer a delicate and romantic pink hue, symbolizing love, compassion, and emotional healing. They are a popular alternative to traditional engagement stones due to their unique color.',
+    'White Sapphire' => 'White Sapphires are known for their clear and sparkling appearance, often used as a diamond alternative. They symbolize clarity, purity, and spiritual wisdom.',
+    'Padparadscha' => 'Padparadscha Sapphires are highly sought after for their unique and rare pink-orange color, resembling the hues of a lotus flower. This gemstone symbolizes rare beauty and elegance.',
+    'Star Sapphire' => 'Star Sapphires display a mesmerizing star-like pattern, known as asterism, when viewed under light. They symbolize destiny, divine guidance, and protection.',
+    'Purple Sapphire' => 'Purple Sapphires are admired for their rich and regal purple tones, symbolizing royalty, luxury, and wisdom. They are a striking choice for those seeking a unique and vibrant gemstone.',
+    'Garnet' => 'Garnets come in a variety of colors, with deep red being the most well-known. They symbolize friendship, trust, and loyalty. Garnets are also believed to inspire love and devotion.',
+    'Tourmaline' => 'Tourmaline is known for its wide array of colors, from vibrant pinks to deep greens. This versatile gemstone is believed to protect against negative energy and enhance understanding and compassion.',
+    'Chrysoberyl' => 'Chrysoberyl gemstones, including the rare Alexandrite, are known for their brilliance and striking color-changing properties. They symbolize luck, protection, and balance.',
+    'Aquamarine' => 'Aquamarine gemstones are prized for their serene blue color, reminiscent of the sea. They symbolize tranquility, courage, and clear communication, making them a favorite for those seeking inner peace.',
+    'Topaz' => 'Topaz comes in various colors, including blue, yellow, and pink. It is believed to bring joy, generosity, abundance, and good health. Blue Topaz, in particular, is associated with calmness and emotional stability.',
+    'Spinel' => 'Spinel gemstones are valued for their brilliance and wide range of colors, including vibrant reds, pinks, and blues. They symbolize renewal, revitalization, and protection.',
+    'Amethyst' => 'Amethyst is celebrated for its stunning range of purple shades, symbolizing peace, stability, and spiritual awareness. It is often used to calm the mind and protect against negative energy.',
+    'Moonstone' => 'Moonstone is admired for its ethereal glow and unique play-of-color, resembling the light of the moon. It symbolizes intuition, balance, and new beginnings.',
 ];
 
 // Set the description based on the category
@@ -144,25 +144,27 @@ $backgroundImage = 'DescriptionBgImg/' . htmlspecialchars($category) . '.jpg';
 
             // Query to fetch product data based on the category
             $sql = "SELECT id, product_name, image1_base64, price, description FROM products WHERE category = '$category'";
-            $result = $conn->query($sql);
-
+            $result = $conn->query($sql);      
             // Check if any results were returned
             if ($result->num_rows > 0) {
                 // Output data for each row
                 while ($row = $result->fetch_assoc()) {
                     echo '<div class="card">';
+                    echo '<a href="product_details.php?id=' . $row['id'] . '">';
                     echo '<img src="data:image/jpeg;base64,' . $row["image1_base64"] . '" alt="' . $row["product_name"] . '">';
                     echo '<h3>' . $row["product_name"] . '</h3>';
                     echo '<p>' . $row["description"] . '</p>';
                     echo '<div class="price">';
                     echo '<span class="new-price">$' . $row["price"] . '</span>';
+                    echo '</a>';
                     echo '</div>';
 
+                    // Add to cart button or alert to sign in
                     if (isset($_SESSION['user_id'])) {
                         echo '<form method="POST" action="shop_data.php">';
                         echo '<input type="hidden" name="product_id" value="' . $row["id"] . '">';
                         echo '<input type="hidden" name="category" value="' . $category . '">';
-                        echo '<button type="submit" name="add_to_cart" class="add-to-cart">Add to Cart 🛒</button>';
+                        echo '<button type="submit" name="add_to_cart" class="add-to-cart">Buy Now 🛒</button>';
                         echo '</form>';
                     } else {
                         echo '<button onclick="alert(\'Please sign in to add items to your cart.\')" class="add-to-cart">Add to Cart 🛒</button>';

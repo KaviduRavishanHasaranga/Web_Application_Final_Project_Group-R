@@ -1,4 +1,5 @@
-<?php include 'assets/header.php';
+<?php 
+include 'assets/header.php';
 include 'connection.php';
 
 // Fetch user details if logged in
@@ -42,6 +43,24 @@ if (isset($_POST['remove_from_cart'])) {
     header("Location: checkout.php");
     exit();
 }
+
+// Handle quantity update
+if (isset($_POST['update_quantity'])) {
+    $productIdToUpdate = $_POST['product_id'];
+    $newQuantity = (int)$_POST['quantity'];
+
+    // Ensure the new quantity is valid
+    if ($newQuantity > 0) {
+        // Update quantity in session
+        if (isset($_SESSION['cart'][$productIdToUpdate])) {
+            $_SESSION['cart'][$productIdToUpdate]['quantity'] = $newQuantity;
+        }
+    }
+
+    // Redirect to avoid form resubmission issues
+    header("Location: checkout.php");
+    exit();
+}
 ?>
 
 <link rel="stylesheet" href="css/shop.css">
@@ -51,6 +70,7 @@ if (isset($_POST['remove_from_cart'])) {
     <div class="checkout">
 
         <h2>Express checkout</h2>
+        
         <!-- Display user details -->
         <div class="con">
             <div class="ship">
@@ -246,7 +266,14 @@ if (isset($_POST['remove_from_cart'])) {
                     echo '<div><img src="data:image/jpeg;base64,' . $productImage . '" alt="' . $productName . '" class="order-item-image"></div>';
                     echo '<div><h3>' . $productName . '</h3>';
                     echo '<p>Price: $' . $productPrice . '</p>';
-                    echo '<p>Quantity: ' . $productQuantity . '</p>'; // Show the quantity
+
+                    echo '<form method="POST" action="checkout.php">';
+                    echo '<input type="hidden" name="product_id" value="' . $productId . '">';
+                    echo '<label for="quantity_' . $productId . '">Quantity: </label>';
+                    echo '<input type="number" class="cart-qty-update" id="quantity_' . $productId . '" name="quantity" value="' . $productQuantity . '" min="1" required>';
+                    echo '<button type="submit" name="update_quantity" class="update-quantity">Update</button>';
+                    echo '</form>';
+
                     echo '<p>Total: $' . ($productPrice * $productQuantity) . '</p>'; // Show total price for that item
                     echo '</div>';
 
@@ -264,7 +291,7 @@ if (isset($_POST['remove_from_cart'])) {
             echo "<p>Your cart is empty.</p>";
         }
         ?>
-
+        
         <div class="order-summary">
             <h3>Order Summary</h3>
             <?php
