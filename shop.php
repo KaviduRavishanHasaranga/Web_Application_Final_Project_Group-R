@@ -7,7 +7,7 @@
             <h1>Jems Collections</h1><br>
             <div class="start-container">
                 <div class="start-colum">
-                    <a href="shop_data.php?category=blue-sapphire" id="BLUE_SAPPHIRE">
+                    <a href="shop_data.php?category=Blue Sapphire" id="BLUE_SAPPHIRE">
                         <img src="Images/BLUE SAPPHIRE-2.jpg" alt="this is gem picture" class="one-image-f">
                         <p>Precious Gemstones</p>
                         <button id="jembutton">
@@ -17,7 +17,7 @@
                 </div>
 
                 <div class="start-colum">
-                    <a href="shop_data.php?category=ruby" id="RUBY">
+                    <a href="shop_data.php?category=Ruby" id="RUBY">
                         <img src="Images/ruby-3.jpg" alt="this is gem picture" class="one-image-f">
                         <p>Precious Gemstones</p>
                         <button id="jembutton">
@@ -27,7 +27,7 @@
                 </div>
 
                 <div class="start-colum">
-                    <a href="shop_data.php?category=yellow-sapphire" id="YELLOW_SAPPHIRE">
+                    <a href="shop_data.php?category=Yellow Sapphire" id="YELLOW_SAPPHIRE">
                         <img src="Images/YELLOW SAPPHIRE-1.jpg" alt="this is gem picture" class="one-image-f">
                         <p>Precious Gemstones</p>
                         <button id="jembutton">
@@ -37,7 +37,7 @@
                 </div>
 
                 <div class="start-colum">
-                    <a href="shop_data.php?category=pink-sapphire" id="PINK_SAPPHIRE">
+                    <a href="shop_data.php?category=Pink Sapphire" id="PINK_SAPPHIRE">
                         <img src="Images/PINK SAPPHIRE-3.jpg" alt="this is gem picture" class="one-image-f">
                         <p>Precious Gemstones</p>
                         <button id="jembutton">
@@ -47,7 +47,7 @@
                 </div>
 
                 <div class="start-colum">
-                    <a href="shop_data.php?category=white-sapphire" id="WHITE_SAPPHIRE">
+                    <a href="shop_data.php?category=White Sapphire" id="WHITE_SAPPHIRE">
                         <img src="Images/WHITE SAPPHIRE-2.jpg" alt="this is gem picture" class="one-image-f">
                         <p>Precious Gemstones</p>
                         <button id="jembutton">
@@ -57,7 +57,7 @@
                 </div>
 
                 <div class="start-colum">
-                    <a href="shop_data.php?category=padparadscha" id="PADPARADSCHA">
+                    <a href="shop_data.php?category=Padparadscha" id="PADPARADSCHA">
                         <img src="Images/PADPARADSCHA-1.jpg" alt="this is gem picture" class="one-image-f">
                         <p>Precious Gemstones</p>
                         <button id="jembutton">
@@ -67,7 +67,7 @@
                 </div>
 
                 <div class="start-colum">
-                    <a href="shop_data.php?category=star-sapphire" id="STAR_SAPPHIRE">
+                    <a href="shop_data.php?category=Star Sapphire" id="STAR_SAPPHIRE">
                         <img src="Images/STAR SAPPHIRE.jpg" alt="this is gem picture" class="one-image-f">
                         <p>Precious Gemstones</p>
                         <button id="jembutton">
@@ -77,7 +77,7 @@
                 </div>
 
                 <div class="start-colum">
-                    <a href="shop_data.php?category=purple-sapphire" id="PURPLE_SAPPHIRE">
+                    <a href="shop_data.php?category=Purple Sapphire" id="PURPLE_SAPPHIRE">
                         <img src="Images/Purple Sapphire-1.jpg" alt="this is gem picture" class="one-image-f">
                         <p>Precious Gemstones</p>
                         <button id="jembutton">
@@ -93,7 +93,7 @@
 
             <div class="start-container">
                 <div class="start-colum">
-                    <a href="shop_data.php?category=garnet" id="GARNET">
+                    <a href="shop_data.php?category=Garnet" id="GARNET">
                         <img src="Images/Garnet.png" alt="this is gem picture" class="one-image-f">
                         <p>Semi Precious Gemstones</p>
                         <button id="jembutton">
@@ -103,7 +103,7 @@
                 </div>
 
                 <div class="start-colum">
-                    <a href="shop_data.php?category=tourmaline" id="TOURMALINE">
+                    <a href="shop_data.php?category=Tourmaline" id="TOURMALINE">
                         <img src="Images/Tourmaline.jpg" alt="this is gem picture" class="one-image-f">
                         <p>Semi Precious Gemstones</p>
                         <button id="jembutton">
@@ -113,7 +113,7 @@
                 </div>
 
                 <div class="start-colum">
-                    <a href="shop_data.php?category=chrysoberyl" id="CHRYSOBERYL">
+                    <a href="shop_data.php?category=Chrysoberyl" id="CHRYSOBERYL">
                         <img src="Images/Chrysoberyl.jpg" alt="this is gem picture" class="one-image-f">
                         <p>Semi Precious Gemstones</p>
                         <button id="jembutton">
@@ -123,7 +123,7 @@
                 </div>
 
                 <div class="start-colum">
-                    <a href="shop_data.php?category=aquamarine" id="AQUAMARINE">
+                    <a href="shop_data.php?category=Aquamarine" id="AQUAMARINE">
                         <img src="Images/Aquamarine.jpg" alt="this is gem picture" class="one-image-f">
                         <p>Semi Precious Gemstones</p>
                         <button id="jembutton">
@@ -133,7 +133,7 @@
                 </div>
 
                 <div class="start-colum">
-                    <a href="shop_data.php?category=topaz" id="TOPAZ">
+                    <a href="shop_data.php?category=Topaz" id="TOPAZ">
                         <img src="Images/Topaz.jpg" alt="this is gem picture" class="one-image-f">
                         <p>Semi Precious Gemstones</p>
                         <button id="jembutton">
@@ -143,7 +143,7 @@
                 </div>
 
                 <div class="start-colum">
-                    <a href="shop_data.php?category=spinel" id="SPINEL">
+                    <a href="shop_data.php?category=Spinel" id="SPINEL">
                         <img src="Images/SPINEL.jpg" alt="this is gem picture" class="one-image-f">
                         <p>Semi Precious Gemstones</p>
                         <button id="jembutton">
@@ -153,7 +153,7 @@
                 </div>
 
                 <div class="start-colum">
-                    <a href="shop_data.php?category=amethyst" id="AMETHYST">
+                    <a href="shop_data.php?category=Amethyst" id="AMETHYST">
                         <img src="Images/AMETHYST.jpg" alt="this is gem picture" class="one-image-f">
                         <p>Semi Precious Gemstones</p>
                         <button id="jembutton">
@@ -163,7 +163,7 @@
                 </div>
 
                 <div class="start-colum">
-                    <a href="shop_data.php?category=moonstone" id="MOONSTONE">
+                    <a href="shop_data.php?category=Moonstone" id="MOONSTONE">
                         <img src="Images/MOONSTONE.jpg" alt="this is gem picture" class="one-image-f">
                         <p>Semi Precious Gemstones</p>
                         <button id="jembutton">

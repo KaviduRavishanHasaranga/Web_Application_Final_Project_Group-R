@@ -40,9 +40,9 @@
 
     <div class="gemstone-container">
         <div class="gemstone-item">
-            <a href="shop_data.php?category=blue-sapphire"><img src="Images/BLUE SAPPHIRE-2.jpg" alt="Blue Sapphire"></a>
+            <a href="shop_data.php?category=Blue Sapphire"><img src="Images/BLUE SAPPHIRE-2.jpg" alt="Blue Sapphire"></a>
             <h5><a href="#">Precious Gemstones</a></h5>
-            <a href="shop_data.php?category=blue-sapphire">
+            <a href="shop_data.php?category=Blue Sapphire">
                 <h3>BLUE SAPPHIRE</h3>
             </a>
         </div>
@@ -50,37 +50,37 @@
         <div class="gemstone-item">
             <a href="shop_data.php?category=ruby"><img src="Images/ruby-3.jpg" alt="Ruby"></a>
             <h5><a href="#">Precious Gemstones</a></h5>
-            <a href="shop_data.php?category=ruby">
+            <a href="shop_data.php?category=Ruby">
                 <h3>RUBY</h3>
             </a>
         </div>
 
         <div class="gemstone-item">
-            <a href="shop_data.php?category=yellow-sapphire"><img src="Images/YELLOW SAPPHIRE-1.jpg" alt="Yellow Sapphire"></a>
+            <a href="shop_data.php?category=Yellow Sapphire"><img src="Images/YELLOW SAPPHIRE-1.jpg" alt="Yellow Sapphire"></a>
             <h5><a href="#">Precious Gemstones</a></h5>
-            <a href="shop_data.php?category=yellow-sapphire">
+            <a href="shop_data.php?category=Yellow Sapphire">
                 <h3>YELLOW SAPPHIRE</h3>
             </a>
         </div>
 
         <div class="gemstone-item">
-            <a href="shop_data.php?category=pink-sapphire"><img src="Images/PINK SAPPHIRE-3.jpg" alt="Pink Sapphire"></a>
+            <a href="shop_data.php?category=Pink Sapphire"><img src="Images/PINK SAPPHIRE-3.jpg" alt="Pink Sapphire"></a>
             <h5><a href="#">Precious Gemstones</a></h5>
-            <a href="shop_data.php?category=pink-sapphire">
+            <a href="shop_data.php?category=Pink Sapphire">
                 <h3>PINK SAPPHIRE</h3>
             </a>
         </div>
 
         <div class="gemstone-item">
-            <a href="shop_data.php?category=white-sapphire"><img src="Images/WHITE SAPPHIRE-2.jpg" alt="White Sapphire"></a>
+            <a href="shop_data.php?category=White Sapphire"><img src="Images/WHITE SAPPHIRE-2.jpg" alt="White Sapphire"></a>
             <h5><a href="#">Precious Gemstones</a></h5>
-            <a href="shop_data.php?category=white-sapphire">
+            <a href="shop_data.php?category=white Sapphire">
                 <h3>WHITE SAPPHIRE</h3>
             </a>
         </div>
 
         <div class="gemstone-item">
-            <a href="shop_data.php?category=padparadscha"><img src="Images/PADPARADSCHA-1.jpg" alt="Padparadscha"></a>
+            <a href="shop_data.php?category=Padparadscha"><img src="Images/PADPARADSCHA-1.jpg" alt="Padparadscha"></a>
             <h5><a href="#">Precious Gemstones</a></h5>
             <a href="shop_data.php?category=padparadscha">
                 <h3>PADPARADSCHA</h3>
@@ -88,7 +88,7 @@
         </div>
 
         <div class="gemstone-item">
-            <a href="shop_data.php?category=star-sapphire"><img src="Images/STAR SAPPHIRE.jpg" alt="Star Sapphire"></a>
+            <a href="shop_data.php?category=Star Sapphire"><img src="Images/STAR SAPPHIRE.jpg" alt="Star Sapphire"></a>
             <h5><a href="#">Precious Gemstones</a></h5>
             <a href="shop_data.php?category=star-sapphire">
                 <h3>Star Sapphire</h3>
@@ -96,9 +96,9 @@
         </div>
 
         <div class="gemstone-item">
-            <a href="shop_data.php?category=purple-sapphire"><img src="Images/Purple Sapphire-1.jpg" alt="Purple Sapphire"></a>
+            <a href="shop_data.php?category=Purple Sapphire"><img src="Images/Purple Sapphire-1.jpg" alt="Purple Sapphire"></a>
             <h5><a href="#">Precious Gemstones</a></h5>
-            <a href="shop_data.php?category=purple-sapphire">
+            <a href="shop_data.php?category=purple Sapphire">
                 <h3>Purple Sapphire</h3>
             </a>
         </div>
@@ -167,65 +167,65 @@
 
     <div class="gemstone-container">
         <div class="gemstone-item">
-            <a href="shop_data.php?category=garnet"><img src="Images/Garnet.png" alt="Garnet"></a>
+            <a href="shop_data.php?category=Garnet"><img src="Images/Garnet.png" alt="Garnet"></a>
             <h5><a href="#">Semi Precious Gemstones</a></h5>
-            <a href="shop_data.php?category=garnet">
+            <a href="shop_data.php?category=Garnet">
                 <h3>Garnet</h3>
             </a>
         </div>
 
         <div class="gemstone-item">
-            <a href="shop_data.php?category=tourmaline"><img src="Images/Tourmaline.jpg" alt="Tourmaline"></a>
+            <a href="shop_data.php?category=Tourmaline"><img src="Images/Tourmaline.jpg" alt="Tourmaline"></a>
             <h5><a href="#">Semi Precious Gemstones</a></h5>
-            <a href="shop_data.php?category=tourmaline">
+            <a href="shop_data.php?category=Tourmaline">
                 <h3>Tourmaline</h3>
             </a>
         </div>
 
         <div class="gemstone-item">
-            <a href="shop_data.php?category=chrysoberyl"><img src="Images/Chrysoberyl.jpg" alt="Chrysoberyl"></a>
+            <a href="shop_data.php?category=Chrysoberyl"><img src="Images/Chrysoberyl.jpg" alt="Chrysoberyl"></a>
             <h5><a href="#">Semi Precious Gemstones</a></h5>
-            <a href="shop_data.php?category=chrysoberyl">
+            <a href="shop_data.php?category=Chrysoberyl">
                 <h3>Chrysoberyl</h3>
             </a>
         </div>
 
         <div class="gemstone-item">
-            <a href="shop_data.php?category=aquamarine"><img src="Images/Aquamarine.jpg" alt="Aquamarine"></a>
+            <a href="shop_data.php?category=Aquamarine"><img src="Images/Aquamarine.jpg" alt="Aquamarine"></a>
             <h5><a href="#">Semi Precious Gemstones</a></h5>
-            <a href="shop_data.php?category=aquamarine">
+            <a href="shop_data.php?category=Aquamarine">
                 <h3>Aquamarine</h3>
             </a>
         </div>
 
         <div class="gemstone-item">
-            <a href="shop_data.php?category=topaz"><img src="Images/Topaz.jpg" alt="Topaz"></a>
+            <a href="shop_data.php?category=Topaz"><img src="Images/Topaz.jpg" alt="Topaz"></a>
             <h5><a href="#">Semi Precious Gemstones</a></h5>
-            <a href="shop_data.php?category=topaz">
+            <a href="shop_data.php?category=Topaz">
                 <h3>Topaz</h3>
             </a>
         </div>
 
         <div class="gemstone-item">
-            <a href="shop_data.php?category=spinel"><img src="Images/SPINEL.jpg" alt="Spinel"></a>
+            <a href="shop_data.php?category=Spinel"><img src="Images/SPINEL.jpg" alt="Spinel"></a>
             <h5><a href="#">Semi Precious Gemstones</a></h5>
-            <a href="shop_data.php?category=spinel">
+            <a href="shop_data.php?category=Spinel">
                 <h3>Spinel</h3>
             </a>
         </div>
 
         <div class="gemstone-item">
-            <a href="shop_data.php?category=amethyst"><img src="Images/AMETHYST.jpg" alt="Amethyst"></a>
+            <a href="shop_data.php?category=Amethyst"><img src="Images/AMETHYST.jpg" alt="Amethyst"></a>
             <h5><a href="#">Semi Precious Gemstones</a></h5>
-            <a href="shop_data.php?category=amethyst">
+            <a href="shop_data.php?category=Amethyst">
                 <h3>Amethyst</h3>
             </a>
         </div>
 
         <div class="gemstone-item">
-            <a href="shop_data.php?category=moonstone"><img src="Images/MOONSTONE.jpg" alt="Moonstone"></a>
+            <a href="shop_data.php?category=Moonstone"><img src="Images/MOONSTONE.jpg" alt="Moonstone"></a>
             <h5><a href="#">Semi Precious Gemstones</a></h5>
-            <a href="shop_data.php?category=moonstone">
+            <a href="shop_data.php?category=Moonstone">
                 <h3>Moonstone</h3>
             </a>
         </div>

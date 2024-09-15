@@ -29,3 +29,4 @@ if (isset($_POST['submit'])) {
     //cose the connetion
     $conn->close();
 }
+?>

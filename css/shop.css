@@ -1,27 +1,17 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-    font-family: "Open Sans", sans-serif;;
-    list-style: none;
-    text-decoration: none;
-}
-
 .one {
   width: 100%;
   max-width: 1300px;
   margin: 0 auto;
   display: flex;
   gap: 20px;
-  margin-top: 200px;
+  margin-top: 120px;
 }
 
 #category {
   font-weight: bold;
 }
 #category:hover {
-  color:black;
+  color: black;
 }
 
 /*price control*/
@@ -39,7 +29,7 @@
 
 .price-filter h2 {
   font-size: 20px;
-  color:black;
+  color: black;
   margin-bottom: 15px;
 }
 
@@ -76,7 +66,7 @@
 
 .price-filter p {
   font-size: 16px;
-  color:black;
+  color: black;
   margin-top: 10px;
 }
 
@@ -138,7 +128,7 @@
 
 .price-filter p {
   font-size: 16px;
-  color:black;
+  color: black;
   margin-top: 10px;
 }
 
@@ -250,58 +240,246 @@
   }
 }
 
-/* Dropdown container */
-.dropdown {
-  position: relative;
-  display: inline-block;
+/* --- Check out page--- */
+.container {
+  max-width: 1200px;
+  margin: 120px auto;
+  padding: 20px 50px;
+  background-color: #ededed;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+}
+
+.checkout {
+  width: 45%;
+}
+
+.order {
+  width: 45%;
+}
+
+.order-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.order-item-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.order-summary {
+  margin-top: 20px;
+}
+.order-summary-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.order-summary-total {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+/* .header img {
+  display: block;
+  margin: 0 auto 20px;
+  width: 200px;
+  height: auto;
+} */
+
+h2 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.express-checkout-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+}
+
+.express-checkout-buttons button {
+  width: 48%;
+  padding: 5px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.shop-pay {
+  background-color: #00457c;
+  color: #fff;
+  font-size: 12px;
+}
+.shop-pay i {
+  font-size: 20px;
+}
+
+.shop-pay:hover {
+  background-color: #ffffff;
+  color: #00457c;
+  border: 1px solid #00457c;
+}
+
+.gpay {
+  background-color: #000000;
+  color: #fff;
+}
+
+.gpay:hover {
+  background-color: #ffffff;
+  color: #000000;
+  border: 1px solid #000000;
+}
+.gpay i {
+  font-size: 35px;
+}
+
+.form-section {
+  margin-bottom: 20px;
+}
+
+.form-section label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.form-section input,
+.form-section select {
   width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-section.full {
+  width: 100%;
+}
+
+.delivery-options {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.delivery-options input {
+  margin-right: 10px;
+}
+
+.login {
+  display: block;
+  text-align: right;
+  margin-bottom: 20px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.order-summary {
+  margin-top: 30px;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.order-summary p {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
   margin-bottom: 10px;
 }
 
-/* Dropdown button */
-.dropdown-toggle {
-  background-color: #f1f1f1;
-  color: #333;
-  padding: 10px;
+.pay-now {
   width: 100%;
-  border: 1px solid #ccc;
+  padding: 15px;
+  font-size: 18px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
   border-radius: 5px;
   cursor: pointer;
-  text-align: left;
-  font-size: 16px;
+  margin-top: 20px;
+  font-weight: 600;
 }
 
-/* Dropdown content (hidden by default) */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #fff;
-  min-width: 100%;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  border-radius: 5px;
-  z-index: 1;
+.pay-now:hover {
+  background-color: #0056b3;
+
 }
 
-/* add the dropdown list */
-/* Radio button items */
-.dropdown-item {
-  display: block;
+hr{
+  width: 2px;
+  background-color: #000000;
+}
+
+.edit-address-form{
+  margin-top: 20px;
+}
+.con{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+#edit-address-btn{
+  padding: 1px 10px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+#edit-address-btn:hover{
+  text-decoration: underline;
+
+}
+
+.save-btn{
+  width: 100%;
   padding: 10px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  background-color: #757575;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: 600;
+}
+.save-btn:hover{
+  background-color: #353535;
   cursor: pointer;
-  font-size: 14px;
-  color: #333;
+  border: 1px solid #242424;
+}
+.ship{
+  line-height:1.6em;
 }
 
-.dropdown-item:hover {
-  background-color: #f1f1f1;
+.cart-qty-update{
+  width: 50px;
+  padding: 1px 5px;
 }
 
-/* Show dropdown on hover */
-.dropdown:hover .dropdown-content {
-  display: block;
+.update-quantity {
+  background-color: transparent;
+  color: rgb(73, 73, 73); /* White text color */
+  border: none; /* Remove border */
+  padding: 1px 5px; /* Add padding */
+  border-radius: 4px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 14px; /* Set font size */
+  text-decoration: underline;
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
 }
 
-.dropdown-item input {
-  margin-right: 10px;
-  cursor: pointer;
+.remove-from-cart{
+  padding: 1px 5px;
+  border-radius: 5px;
 }

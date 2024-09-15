@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+  }
+  body {
+    background-color: #ffffff;
+  }
+  .container {
+    background-color: #fff;
+    width: 600px;
+    padding: 1.5rem;
+    margin: 130px auto 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 35px black;
+  }
+  form {
+    margin: 0 2rem;
+  }
+  .form-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 1.3rem;
+    margin-bottom: 0.4rem;
+  }
+  input {
+    color: inherit;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #757575;
+    padding-left: 1.5rem;
+    font-size: 15px;
+  }
+  .input-group {
+    padding: 1% 0;
+    position: relative;
+  }
+  .input-group i {
+    position: absolute;
+    color: black;
+    margin-top: 8px;
+  }
+  input:focus {
+    background-color: transparent;
+    outline: transparent;
+    border-bottom: 2px solid rgb(327, 90%, 90, 28%);
+  }
+  input::placeholder {
+    color: transparent;
+  }
+  label {
+    color: #757575;
+    position: relative;
+    left: 1.2em;
+    top: -1.3em;
+    cursor: auto;
+    transition: 0.3s ease all;
+    margin-top: 8px;
+  }
+  input:focus ~ label,
+  input:not(:placeholder-shown)~label{
+    top: -1.5em;
+    font-size: 15px;
+    color: hsl(0, 0%, 36%);
+  }
+  .recover {
+    text-align: right;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  .recover a:hover {
+    text-decoration: none;
+    color: blue;
+  }
+  .btn {
+    font-size: 1.1rem;
+    padding: 8px 0;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    width: 100%;
+    background-color: rgb(125, 125, 235);
+    color: white;
+    cursor: pointer;
+    transition: 0.9s;
+  }
+  .btn:hover {
+    background-color: #07001f;
+  }
+  .or {
+    font-size: 1.1rem;
+    margin-top: 0.5rem;
+    text-align: center;
+  }
+  .icons {
+    text-align: center;
+  }
+  .icons i {
+    color: rgb(125, 125, 235);
+    padding: 0.8rem 1.5rem;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border: 2px solid #dfe9f5;
+    margin: 0 15px;
+    transition: 1s;
+  }
+  .icons i:hover {
+    background-color: #07001f;
+    font-size: 1.6rem;
+    border: 2px solid rgb(125, 125, 235);
+  }
+  .links{
+    display: flex;
+    justify-content: space-around;
+    padding: 0 4rem;
+    margin-top: 0.9rem;
+    font-weight: bold;
+  }
+  button{
+    color: rgb(125, 125, 235);
+    border: none;
+    background-color: transparent;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  button:hover{
+    text-decoration: underline;
+    color: blue;
+  }
+  .logout{
+    width: 50%;
+    background-color: darkblue;
+  }
+
+
+
+  /* New Added CSS */
+/* General Styles */
+
+/* Input Group Styles */
+.input-group {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.input-group input, 
+.input-group select {
+  width: 100%;
+  padding: 10px;
+  padding-left: 40px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.input-group label {
+  position: absolute;
+  left: 40px;
+  top: 10px;
+  font-size: 16px;
+  color: #888;
+  pointer-events: none;
+  transition: all 0.2s ease;
+}
+
+.input-group i {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  font-size: 18px;
+  color: #888;
+}
+
+/* Form Section Styles */
+.form-section {
+  margin-bottom: 15px;
+}
+
+.form-section.full {
+  width: 100%;
+}
+
+.form-section label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+  font-weight: bold;
+}
+
+.form-section input,
+.form-section select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.form-section input[type="text"]:focus,
+.form-section input[type="email"]:focus,
+.form-section input[type="password"]:focus,
+.form-section select:focus {
+  border-color:rgb(125, 125, 235);
+  outline: none;
+}
+
+#country{
+  width: 80%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-left: 40px;
+
+}
+.cou{
+  margin-top: 40px;
+  margin-left: -21px;
+}
