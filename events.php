@@ -95,7 +95,7 @@ if ($result->num_rows > 0){
             echo '</div>';
             echo '<br>';
             // Convert newlines to <p> tags
-            $content = '<p>' . str_replace("\n", '</p><p>', $row["event_content"]) . '</p>';
+            $content = '<p>' . str_replace("\n", '<br></p><p>', $row["event_content"]) . '</p>';
             echo '<div>' . $content . '</div>'; //display event content
             echo '<br>';
             echo '<span> Posted in <a href="#">Blue sapphire</a>, <a href="#">Events</a>, <a href="#">Gem Exhibition</a>, <a href="#">gemstone</a>, <a href="#">sustainability</a></span>';

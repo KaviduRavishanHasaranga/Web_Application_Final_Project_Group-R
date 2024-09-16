@@ -191,8 +191,7 @@ form .user-details .input-box {
 
 /* Event Page */
 .event-container {
-  margin: 20px 180px 0;
-
+  margin: 140px 180px 0;
 }
 .event-container .event-title {
   text-align: center;
@@ -275,4 +274,31 @@ form .user-details .input-box {
   list-style-image: url("../Images/red-symbol.png");
   margin-block: 2rem;
   font-size: 1.1rem;
+}
+
+/* blog page */
+
+.blog-posts-dummy{
+  border: 1px solid rgb(66, 66, 66);
+  padding: 30px 50px 30px 50px;
+  text-align: justify;
+  box-sizing: border-box;
+  margin: 140px 50px 0px 50px;
+  border-radius: 10px;
+  background-color: #c3defb;
+}
+
+.blog-posts{
+  border: 1px solid rgb(66, 66, 66);
+  padding: 30px 50px 30px 50px;
+  text-align: justify;
+  box-sizing: border-box;
+  margin: 0px 50px 0px 50px;
+  border-radius: 10px;
+  background-color: #c3defb;
+}
+
+.blogH3{
+  margin-bottom: 30px;
+  font-family:Georgia, 'Times New Roman', Times, serif;
 }
