@@ -191,7 +191,8 @@ form .user-details .input-box {
 
 /* Event Page */
 .event-container {
-  margin: 140px 180px 0;
+  margin: 20px 180px 0;
+
 }
 .event-container .event-title {
   text-align: center;

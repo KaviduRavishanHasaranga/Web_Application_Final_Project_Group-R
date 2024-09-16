@@ -1,6 +1,6 @@
 <?php include 'assets/header.php'; ?>
 
-    <!-- Event Page  -->
+<!--     
     <div class="event-container">
         <div class="event-title">
             <h1>Events & News</h1><br>
@@ -49,7 +49,7 @@
             <br><br>
             <a href="#"><button class="read-more">Read More</button></a>
         </div>
-    </div>
+    </div> -->
 
 <?php
 //Define SQL query to get stored in the database
