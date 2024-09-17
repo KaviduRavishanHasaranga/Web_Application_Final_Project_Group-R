@@ -44,7 +44,6 @@ include 'connection.php'; // Include your database connection
                 <ul class="navmenu">
                     <li><a href="index.php" class="<?= (basename($_SERVER['PHP_SELF']) == 'index.php') ? 'active' : ''; ?>">Home</a></li>
                     <li><a href="shop.php" class="<?= (basename($_SERVER['PHP_SELF']) == 'shop.php') ? 'active' : ''; ?>">Shop</a></li>
-                    <li><a href="blog.php" class="<?= (basename($_SERVER['PHP_SELF']) == 'blog.php') ? 'active' : ''; ?>">Blog</a></li>
                     <li><a href="events.php" class="<?= (basename($_SERVER['PHP_SELF']) == 'events.php') ? 'active' : ''; ?>">Events</a></li>
                     <li><a href="information.php" class="<?= (basename($_SERVER['PHP_SELF']) == 'information.php') ? 'active' : ''; ?>">Information</a></li>
                     <li><a href="about.php" class="<?= (basename($_SERVER['PHP_SELF']) == 'about.php') ? 'active' : ''; ?>">About Us</a></li>
