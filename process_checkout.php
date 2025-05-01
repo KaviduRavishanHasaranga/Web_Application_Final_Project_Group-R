@@ -79,7 +79,7 @@ if (!$error) {
     $stmt->close();
 
     // Insert each product into the order_items table
-    foreach ($_SESSION['cart'] as $productId => $cartItem) {
+    // foreach ($_SESSION['cart'] as $productId => $cartItem) {
         $productQuantity = $cartItem['quantity'];
         $productPrice = $cartItem['price'];
 
@@ -106,7 +106,7 @@ if (!$error) {
                 }
             }
         }
-    }
+    // }
 }
 
 // Insert payment into payments table
